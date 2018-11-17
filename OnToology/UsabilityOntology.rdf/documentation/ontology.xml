@@ -1,0 +1,1637 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/usability-ontology#"
+     xml:base="http://w3id.org/usability-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:usability-ontology="http://w3id.org/usability-ontology#">
+    <owl:Ontology rdf:about="http://w3id.org/usability-ontology">
+        <dc:creator>Danilov Nikita</dc:creator>
+        <dc:description xml:lang="en">Ontology &apos;Usability&apos; created to describe and store information about interactions of user with a software user interface</dc:description>
+        <dc:description xml:lang="en">Онтология &quot;Удобство испльзования&quot; предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса</dc:description>
+        <dc:publisher>Denis Palashevskiy</dc:publisher>
+        <dc:title xml:lang="en">Usability</dc:title>
+        <dc:title xml:lang="ru">Удобство использования</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/usability-ontology#contains -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#contains">
+        <owl:inverseOf rdf:resource="http://w3id.org/usability-ontology#isContainedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">A transitive property which determines that some subject contains/stores some object inside of it. Inverse of isContainedIn</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Транзитивное свойство, которое определят, что некий объект содержит/хранит внутря себя какой-либо другой объект</rdfs:comment>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:label xml:lang="ru">cодержит</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasImage -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#hasImage">
+        <owl:inverseOf rdf:resource="http://w3id.org/usability-ontology#wasImaged"/>
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <rdfs:range rdf:resource="http://w3id.org/usability-ontology#Image"/>
+        <rdfs:comment xml:lang="en">The property which associate some region variation with its image</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Свойство которое связывает вариацию региона с его изображением</rdfs:comment>
+        <rdfs:label xml:lang="en">hasImage</rdfs:label>
+        <rdfs:label xml:lang="ru">имеетИзображение</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#isContainedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#isContainedIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:comment xml:lang="en">A transitive property which determines that some object is contained/stored/located inside of some subject. Inverse of contains</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Транзитивное свойство, которое определяет, что некоторый объект содержится/хранится/находится внутри какого-либо другого объекта</rdfs:comment>
+        <rdfs:label xml:lang="en">isContainedIn</rdfs:label>
+        <rdfs:label xml:lang="ru">содержитсяВ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#performed -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#performed">
+        <owl:inverseOf rdf:resource="http://w3id.org/usability-ontology#wasPerformedBy"/>
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#User"/>
+        <rdfs:range rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <rdfs:comment xml:lang="ru">The property that associates a user with a session that he performed</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает пользователя с сессией, которую он выполнил</rdfs:comment>
+        <rdfs:label xml:lang="en">performed</rdfs:label>
+        <rdfs:label xml:lang="ru">выполнил</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#wasAssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#wasAssociatedWith">
+        <owl:inverseOf rdf:resource="http://w3id.org/usability-ontology#wasInvokedIn"/>
+        <rdfs:comment xml:lang="en">The property that associates command event with the specific command instance</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает командное событие с экземпляром команды</rdfs:comment>
+        <rdfs:label xml:lang="en">wasAssociatedWith</rdfs:label>
+        <rdfs:label xml:lang="ru">связанаС</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#wasImaged -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#wasImaged">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Image"/>
+        <rdfs:range rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <rdfs:comment xml:lang="en">The property that associates an image with the corresponding region variation</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает изображение с соответствующей вариацией региона</rdfs:comment>
+        <rdfs:label xml:lang="en">wasImaged</rdfs:label>
+        <rdfs:label xml:lang="ru">изображает</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#wasInvokedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#wasInvokedIn">
+        <rdfs:comment xml:lang="en">The property that associates specific command with the event in which the command was called</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает команду с командным событием, в котором команда была вызвана</rdfs:comment>
+        <rdfs:label xml:lang="en">wasInvokedIn</rdfs:label>
+        <rdfs:label xml:lang="en">былоВызваноВ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#wasPerformedBy -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#wasPerformedBy">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <rdfs:range rdf:resource="http://w3id.org/usability-ontology#User"/>
+        <rdfs:comment xml:lang="en">The property that associates a session with the user who performed it</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает сессию с пользователем, который ее выполнял</rdfs:comment>
+        <rdfs:label xml:lang="en">wasPerformedBy</rdfs:label>
+        <rdfs:label xml:lang="ru">былаВыполненаПользователем</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#wasPerformedOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#wasPerformedOn">
+        <owl:inverseOf rdf:resource="http://w3id.org/usability-ontology#wasUsedIn"/>
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <rdfs:range rdf:resource="http://w3id.org/usability-ontology#Device"/>
+        <rdfs:comment xml:lang="en">The property that associates a session with the device on which the session was run</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает сессию с устройством, на котором она выполнялась</rdfs:comment>
+        <rdfs:label xml:lang="en">wasPerformedOn</rdfs:label>
+        <rdfs:label xml:lang="ru">былаВыполненаНа</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#wasUsedIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/usability-ontology#wasUsedIn">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Device"/>
+        <rdfs:range rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <rdfs:comment xml:lang="en">The property that associates a device with the sessions which were run on that device</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Связывает устройство с сессиями, которые были на нем запущены</rdfs:comment>
+        <rdfs:label xml:lang="en">wasUsedIn</rdfs:label>
+        <rdfs:label xml:lang="ru">былоИспользованоВ</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasBinaryData -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasBinaryData">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasCommandName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasCommandName">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#CommandEvent"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasDateTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasDateTime">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasDpiX -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasDpiX">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasDpiY -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasDpiY">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasEndDateTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasEndDateTime">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasHeight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasHeight">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasInRegionX -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasInRegionX">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasInRegionY -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasInRegionY">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasMaxHeight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasMaxHeight">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasMaxWidth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasMaxWidth">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasMinHeight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasMinHeight">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasMinWidth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasMinWidth">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasName">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasStartDateTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasStartDateTime">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasUid -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasUid">
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#hasWidth -->
+
+
+    <owl:DatatypeProperty rdf:about="http://w3id.org/usability-ontology#hasWidth">
+        <rdfs:domain rdf:resource="http://w3id.org/usability-ontology#Image"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/usability-ontology#ActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#ActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#Event"/>
+        <rdfs:comment xml:lang="en">The base class for events which are user actions related to user interation with the interface (clicks, mouse movements, etc.)</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Базовый класс, предназначенный для событий, которые представляют собой действия пользователя, относящиеся к взаимодействию пользователя с интерфейсом (клики, перемещения мыши и др.)</rdfs:comment>
+        <rdfs:label xml:lang="en">ActionEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">ДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#ClickMouseActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#ClickMouseActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#MouseActionEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionX"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionY"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents any mouse click</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Клик (click) — щелчок по кнопке мыши.</rdfs:comment>
+        <rdfs:label xml:lang="en">ClickMouseActionEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">КликМышьДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Command -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#Command">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#CommandEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#wasInvokedIn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#CommandEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="ru">Базовый класс команды, вызываемой пользователем.</rdfs:comment>
+        <rdfs:label xml:lang="en">Command</rdfs:label>
+        <rdfs:label xml:lang="en">The base class for the command called by user</rdfs:label>
+        <rdfs:label xml:lang="ru">Команда</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#CommandEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#CommandEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#contains"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Command"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#wasAssociatedWith"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/usability-ontology#Command"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents events, related with the fact of calling a certain command (function) by the user</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события команд. Они служат для фиксации факта вызова определенной команды (функции) пользователем.</rdfs:comment>
+        <rdfs:label xml:lang="en">CommandEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">КомандаСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Device -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#wasUsedIn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Session"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasUid"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="ru">Устройство, на котором выполнялись(ются) сессии.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+        <rdfs:label xml:lang="en">The device on which the sessions were performed.</rdfs:label>
+        <rdfs:label xml:lang="ru">Устройство</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#DoubleClickMouseEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#DoubleClickMouseEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#ClickMouseActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents a double mouse click</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши.</rdfs:comment>
+        <rdfs:label xml:lang="en">DoubleClickMouseEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">ДвойнойКликМышьДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#DoubleTapTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#DoubleTapTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents double tap - two short taps on the screen</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику.</rdfs:comment>
+        <rdfs:label xml:lang="en">DoubleTapTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Event -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#Event">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasDateTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The base class for all different kinds of event that may be occured while the user is interacting with the software</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Базовый класс для событий, которые могут происходить при взаимодействии пользователя с программной системой</rdfs:comment>
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+        <rdfs:label xml:lang="ru">Событие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#HoldTapTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#HoldTapTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents touch-and-hold action - continuous touch with a single finger</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Тач-энд-холд (touch and hold) — нажать и держать.</rdfs:comment>
+        <rdfs:label xml:lang="en">HoldTapTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Image -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#Image">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasBinaryData"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#base64Binary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasDpiX"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasDpiY"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasHeight"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasWidth"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="ru">Class that describes an image of the region variation</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, описывающий изображение, хранящее внешний вид вариации региона</rdfs:comment>
+        <rdfs:label xml:lang="en">Image</rdfs:label>
+        <rdfs:label xml:lang="ru">Изображение</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#KeyboardActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#KeyboardActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#ActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents actions related to user&apos;s manipulations with a keyboard</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает событий действий, связанных с манипуляцией пользователя с клавиатурой</rdfs:comment>
+        <rdfs:label xml:lang="en">KeyboardActionEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">КлавиатураДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#LongTapTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#LongTapTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents touch - a touch that is slightly longer then tap</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Тач (touch) — нажатие длиннее, чем Тап.</rdfs:comment>
+        <rdfs:label xml:lang="en">LongTapTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#MouseActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#MouseActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#ActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents actions related to user&apos;s manipulations with a mouse</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события действий, связанных с манипуляцией пользователя с мышью</rdfs:comment>
+        <rdfs:label xml:lang="en">MouseActionEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">МышьДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#MoveMouseActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#MoveMouseActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#MouseActionEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionX"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionY"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents movements of cursor. hasInRegionX and hasInRegionY properties store information about the new cursor coordinates after the movement</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который соответствует событию движения курсора мыши. Свойства hasInRegionX и hasInRegionY позволяют указать новые координаты курсора мыши после перемещения</rdfs:comment>
+        <rdfs:label xml:lang="en">MoveMouseAcitonEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">ДвижениеМышьДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#PinchTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#PinchTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents pinch - a contractive movement with two fingers on the screen to scale down the image.</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения.</rdfs:comment>
+        <rdfs:label xml:lang="en">PinchTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Region -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#Region">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#contains"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Session"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMaxHeight"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMaxWidth"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMinHeight"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMinWidth"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A fragment of GUI, for example, the whole window, or a part of it</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Область пользовательского интерфейса, например, окно целиком, либо его отдельная часть</rdfs:comment>
+        <rdfs:label xml:lang="en">Region</rdfs:label>
+        <rdfs:label xml:lang="ru">Регион</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#ScrollMouseActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#ScrollMouseActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#MouseActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents a mouse wheel scroll</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который соответствует событию прокрутки колесика мыши</rdfs:comment>
+        <rdfs:label xml:lang="en">ScrollMouseActionEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">ПрокруткаМышьДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Session -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#Session">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#contains"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#wasPerformedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/usability-ontology#User"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#wasPerformedOn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/usability-ontology#Device"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasEndDateTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasStartDateTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasUid"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A period of time when a user interacts with the software</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Временной промежуток, в течение которого пользователь взаимодействует с программной системой</rdfs:comment>
+        <rdfs:label xml:lang="en">Session</rdfs:label>
+        <rdfs:label xml:lang="ru">Сессия</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#SingleClickMouseEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#SingleClickMouseEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#ClickMouseActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents a single mouse click</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие.</rdfs:comment>
+        <rdfs:label xml:lang="en">SingleClickMouseEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">ОдинарныйКликМышьДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#SingleTapTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#SingleTapTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TapTouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents tap action - single short touch with one finger</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Тап, тэп (tap) — короткое нажатие пальцем, сродни клику.</rdfs:comment>
+        <rdfs:label xml:lang="en">SingleTapTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#StretchTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#StretchTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TouchActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents stretch (pinch it open) - tensile movement with two fingers on the screen to enlarge the image.</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения.</rdfs:comment>
+        <rdfs:label xml:lang="en">StretchTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#SwipeTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#SwipeTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TouchActionEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionX"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionY"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class the represents swipe (slide) - a continuous movement of the finger across the screen</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану.</rdfs:comment>
+        <rdfs:label xml:lang="en">SwipeTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#TapTouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#TapTouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#TouchActionEvent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionX"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasInRegionY"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class that represents differend kinds events related to user&apos;s tap on the touch screen</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, предназначенный для описания различных видов тапов - прикосновений пользователя к экрану одним пальцем без движения</rdfs:comment>
+        <rdfs:label xml:lang="en">TapTouchActionEvent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#TouchActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#TouchActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#ActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents events related to user interations with touchscreen, like smartphone or tablet PC</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события действий, связанных с взаимодействием пользователя с сенсорным экраном (тачскрин, англ. touchscreen), например, дисплеем телефона или планшетного компьютера</rdfs:comment>
+        <rdfs:label xml:lang="en">TouchActionEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">КасаниеДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#TypeKeyboardActionEvent -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#TypeKeyboardActionEvent">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/usability-ontology#KeyboardActionEvent"/>
+        <rdfs:comment xml:lang="en">The class that represents clicks on a keyboard</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс, который описывает события нажатия клавиш клавиатуры</rdfs:comment>
+        <rdfs:label xml:lang="en">TypeKeyboardActionEvent</rdfs:label>
+        <rdfs:label xml:lang="ru">ВводКлавиатураДействиеСобытие</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#User -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#User">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#performed"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Session"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasUid"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The user who runs sessions</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Пользователь, который выполнял(ет) сессии.</rdfs:comment>
+        <rdfs:label xml:lang="en">User</rdfs:label>
+        <rdfs:label xml:lang="ru">Пользователь</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Variation -->
+
+
+    <owl:Class rdf:about="http://w3id.org/usability-ontology#Variation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#contains"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/usability-ontology#Region"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasImage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/usability-ontology#Image"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMaxHeight"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMaxWidth"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMinHeight"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasMinWidth"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/usability-ontology#hasName"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minLength rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minLength>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:onDataRange>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Class that describes a region variation, since a region may have one or more variations. Variation is a unique combination of region image&apos;s height and width, or their range</rdfs:comment>
+        <rdfs:comment xml:lang="ru">Класс предназначен для описания вариации региона, так как каждый регион, в свою очередь, может иметь одну или более вариаций. Под вариацией региона в общем случае может пониматься уникальное сочетание параметров высоты и ширины изображения региона, либо их диапазон</rdfs:comment>
+        <rdfs:label xml:lang="en">Variation</rdfs:label>
+        <rdfs:label xml:lang="ru">ВариацияРегиона</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://w3id.org/usability-ontology#CommandA -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#CommandA">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Command"/>
+        <hasName>CommandA</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#CommandB -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#CommandB">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Command"/>
+        <isContainedIn rdf:resource="http://w3id.org/usability-ontology#RegionVariation211"/>
+        <wasInvokedIn rdf:resource="http://w3id.org/usability-ontology#RegionVariation211"/>
+        <hasName>CommandB</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#CommandEvent1113 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#CommandEvent1113">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#CommandEvent"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#CommandA"/>
+        <isContainedIn rdf:resource="http://w3id.org/usability-ontology#RegionVariation111"/>
+        <wasAssociatedWith rdf:resource="http://w3id.org/usability-ontology#CommandA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#CommandEvent1114 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#CommandEvent1114">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#CommandEvent"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#CommandA"/>
+        <isContainedIn rdf:resource="http://w3id.org/usability-ontology#RegionVariation111"/>
+        <wasAssociatedWith rdf:resource="http://w3id.org/usability-ontology#CommandA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#CommandEvent2112 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#CommandEvent2112">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#CommandEvent"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#CommandB"/>
+        <wasAssociatedWith rdf:resource="http://w3id.org/usability-ontology#CommandB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Device1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Device1">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Device"/>
+        <wasUsedIn rdf:resource="http://w3id.org/usability-ontology#Session1"/>
+        <wasUsedIn rdf:resource="http://w3id.org/usability-ontology#Session2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Event1111 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Event1111">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Event"/>
+        <hasInRegionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.0</hasInRegionX>
+        <hasInRegionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">625.0</hasInRegionY>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Event1112 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Event1112">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Event1121 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Event1121">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Event1122 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Event1122">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Event2111 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Event2111">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Event"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Image111 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Image111">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Image112 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Image112">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Image211 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Image211">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Image"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Region11 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Region11">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Region"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#RegionVariation111"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#RegionVariation112"/>
+        <hasName>Region11</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Region21 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Region21">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Region"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#RegionVariation211"/>
+        <hasName>Region21</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#RegionVariation111 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#RegionVariation111">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#CommandEvent1113"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#CommandEvent1114"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#Event1111"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#Event1112"/>
+        <hasImage rdf:resource="http://w3id.org/usability-ontology#Image111"/>
+        <hasName>RegionVariation111</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#RegionVariation112 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#RegionVariation112">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <hasImage rdf:resource="http://w3id.org/usability-ontology#Image112"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#RegionVariation211 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#RegionVariation211">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Variation"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#CommandEvent2112"/>
+        <hasImage rdf:resource="http://w3id.org/usability-ontology#Image211"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Session1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Session1">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#Region11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#Session2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#Session2">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#Session"/>
+        <contains rdf:resource="http://w3id.org/usability-ontology#Region21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#User1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#User1">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#User"/>
+        <performed rdf:resource="http://w3id.org/usability-ontology#Session1"/>
+        <hasName>Ivan Ivanov</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/usability-ontology#User2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/usability-ontology#User2">
+        <rdf:type rdf:resource="http://w3id.org/usability-ontology#User"/>
+        <performed rdf:resource="http://w3id.org/usability-ontology#Session2"/>
+        <hasName>Petr Petrov</hasName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+

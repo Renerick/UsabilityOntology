@@ -1,0 +1,25 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "usability-ontology:TouchActionEvent" "usability-ontology:SwipeTouchActionEvent" "usability-ontology:TapTouchActionEvent" "usability-ontology:DoubleClickMouseEvent" "usability-ontology:SingleClickMouseEvent" "usability-ontology:StretchTouchActionEvent" "usability-ontology:SingleTapTouchActionEvent" "usability-ontology:LongTapTouchActionEvent" "usability-ontology:TypeKeyboardActionEvent" "usability-ontology:HoldTapTouchActionEvent" "usability-ontology:DoubleTapTouchActionEvent" "usability-ontology:MouseActionEvent" "usability-ontology:PinchTouchActionEvent" "usability-ontology:ScrollMouseActionEvent" "usability-ontology:ActionEvent" "usability-ontology:ClickMouseActionEvent" "usability-ontology:CommandEvent" "usability-ontology:MoveMouseActionEvent" "usability-ontology:KeyboardActionEvent" "usability-ontology:Event" ; /*classes style*/
+	"usability-ontology:KeyboardActionEvent" -> "usability-ontology:ActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:TypeKeyboardActionEvent" -> "usability-ontology:KeyboardActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:TapTouchActionEvent" -> "usability-ontology:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:MoveMouseActionEvent" -> "usability-ontology:MouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:PinchTouchActionEvent" -> "usability-ontology:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:LongTapTouchActionEvent" -> "usability-ontology:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:CommandEvent" -> "usability-ontology:Event" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:SingleClickMouseEvent" -> "usability-ontology:ClickMouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:MouseActionEvent" -> "usability-ontology:ActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:SwipeTouchActionEvent" -> "usability-ontology:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:ActionEvent" -> "usability-ontology:Event" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:HoldTapTouchActionEvent" -> "usability-ontology:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:ClickMouseActionEvent" -> "usability-ontology:MouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:SingleTapTouchActionEvent" -> "usability-ontology:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:DoubleTapTouchActionEvent" -> "usability-ontology:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:StretchTouchActionEvent" -> "usability-ontology:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:ScrollMouseActionEvent" -> "usability-ontology:MouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:DoubleClickMouseEvent" -> "usability-ontology:ClickMouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability-ontology:TouchActionEvent" -> "usability-ontology:ActionEvent" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,1031 @@
+@prefix : <http://w3id.org/usability-ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://w3id.org/usability-ontology> .
+
+<http://w3id.org/usability-ontology> rdf:type owl:Ontology ;
+                                      <http://purl.org/dc/elements/1.1/creator> "Danilov Nikita" ;
+                                      <http://purl.org/dc/elements/1.1/description> "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"@en ,
+                                                                                    "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@en ;
+                                      <http://purl.org/dc/elements/1.1/publisher> "Denis Palashevskiy" ;
+                                      <http://purl.org/dc/elements/1.1/title> "Usability"@en ,
+                                                                              "Удобство использования"@ru .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://w3id.org/usability-ontology#contains
+:contains rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isContainedIn ;
+          rdf:type owl:TransitiveProperty ;
+          rdfs:comment "A transitive property which determines that some subject contains/stores some object inside of it. Inverse of isContainedIn"@en ,
+                       "Транзитивное свойство, которое определят, что некий объект содержит/хранит внутря себя какой-либо другой объект"@ru ;
+          rdfs:label "contains"@en ,
+                     "cодержит"@ru .
+
+
+###  http://w3id.org/usability-ontology#hasImage
+:hasImage rdf:type owl:ObjectProperty ;
+          owl:inverseOf :wasImaged ;
+          rdfs:domain :Variation ;
+          rdfs:range :Image ;
+          rdfs:comment "The property which associate some region variation with its image"@en ,
+                       "Свойство которое связывает вариацию региона с его изображением"@ru ;
+          rdfs:label "hasImage"@en ,
+                     "имеетИзображение"@ru .
+
+
+###  http://w3id.org/usability-ontology#isContainedIn
+:isContainedIn rdf:type owl:ObjectProperty ,
+                        owl:TransitiveProperty ;
+               rdfs:comment "A transitive property which determines that some object is contained/stored/located inside of some subject. Inverse of contains"@en ,
+                            "Транзитивное свойство, которое определяет, что некоторый объект содержится/хранится/находится внутри какого-либо другого объекта"@ru ;
+               rdfs:label "isContainedIn"@en ,
+                          "содержитсяВ"@ru .
+
+
+###  http://w3id.org/usability-ontology#performed
+:performed rdf:type owl:ObjectProperty ;
+           owl:inverseOf :wasPerformedBy ;
+           rdfs:domain :User ;
+           rdfs:range :Session ;
+           rdfs:comment "The property that associates a user with a session that he performed"@ru ,
+                        "Связывает пользователя с сессией, которую он выполнил"@ru ;
+           rdfs:label "performed"@en ,
+                      "выполнил"@ru .
+
+
+###  http://w3id.org/usability-ontology#wasAssociatedWith
+:wasAssociatedWith rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :wasInvokedIn ;
+                   rdfs:comment "The property that associates command event with the specific command instance"@en ,
+                                "Связывает командное событие с экземпляром команды"@ru ;
+                   rdfs:label "wasAssociatedWith"@en ,
+                              "связанаС"@ru .
+
+
+###  http://w3id.org/usability-ontology#wasImaged
+:wasImaged rdf:type owl:ObjectProperty ;
+           rdfs:domain :Image ;
+           rdfs:range :Variation ;
+           rdfs:comment "The property that associates an image with the corresponding region variation"@en ,
+                        "Связывает изображение с соответствующей вариацией региона"@ru ;
+           rdfs:label "wasImaged"@en ,
+                      "изображает"@ru .
+
+
+###  http://w3id.org/usability-ontology#wasInvokedIn
+:wasInvokedIn rdf:type owl:ObjectProperty ;
+              rdfs:comment "The property that associates specific command with the event in which the command was called"@en ,
+                           "Связывает команду с командным событием, в котором команда была вызвана"@ru ;
+              rdfs:label "wasInvokedIn"@en ,
+                         "былоВызваноВ"@en .
+
+
+###  http://w3id.org/usability-ontology#wasPerformedBy
+:wasPerformedBy rdf:type owl:ObjectProperty ;
+                rdfs:domain :Session ;
+                rdfs:range :User ;
+                rdfs:comment "The property that associates a session with the user who performed it"@en ,
+                             "Связывает сессию с пользователем, который ее выполнял"@ru ;
+                rdfs:label "wasPerformedBy"@en ,
+                           "былаВыполненаПользователем"@ru .
+
+
+###  http://w3id.org/usability-ontology#wasPerformedOn
+:wasPerformedOn rdf:type owl:ObjectProperty ;
+                owl:inverseOf :wasUsedIn ;
+                rdfs:domain :Session ;
+                rdfs:range :Device ;
+                rdfs:comment "The property that associates a session with the device on which the session was run"@en ,
+                             "Связывает сессию с устройством, на котором она выполнялась"@ru ;
+                rdfs:label "wasPerformedOn"@en ,
+                           "былаВыполненаНа"@ru .
+
+
+###  http://w3id.org/usability-ontology#wasUsedIn
+:wasUsedIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Device ;
+           rdfs:range :Session ;
+           rdfs:comment "The property that associates a device with the sessions which were run on that device"@en ,
+                        "Связывает устройство с сессиями, которые были на нем запущены"@ru ;
+           rdfs:label "wasUsedIn"@en ,
+                      "былоИспользованоВ"@ru .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://w3id.org/usability-ontology#hasBinaryData
+:hasBinaryData rdf:type owl:DatatypeProperty ;
+               rdfs:range xsd:base64Binary .
+
+
+###  http://w3id.org/usability-ontology#hasCommandName
+:hasCommandName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :CommandEvent ;
+                rdfs:range [ rdf:type rdfs:Datatype ;
+                             owl:onDatatype xsd:string ;
+                             owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                    ]
+                                                  )
+                           ] .
+
+
+###  http://w3id.org/usability-ontology#hasDateTime
+:hasDateTime rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Event ;
+             rdfs:range xsd:dateTimeStamp .
+
+
+###  http://w3id.org/usability-ontology#hasDpiX
+:hasDpiX rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Image ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:onDatatype xsd:int ;
+                      owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                             ]
+                                           )
+                    ] .
+
+
+###  http://w3id.org/usability-ontology#hasDpiY
+:hasDpiY rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Image ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:onDatatype xsd:int ;
+                      owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                             ]
+                                           )
+                    ] .
+
+
+###  http://w3id.org/usability-ontology#hasEndDateTime
+:hasEndDateTime rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Session ;
+                rdfs:range xsd:dateTimeStamp .
+
+
+###  http://w3id.org/usability-ontology#hasHeight
+:hasHeight rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Image ;
+           rdfs:range [ rdf:type rdfs:Datatype ;
+                        owl:onDatatype xsd:double ;
+                        owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                               ]
+                                             )
+                      ] .
+
+
+###  http://w3id.org/usability-ontology#hasInRegionX
+:hasInRegionX rdf:type owl:DatatypeProperty ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:double ;
+                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                  ]
+                                                )
+                         ] .
+
+
+###  http://w3id.org/usability-ontology#hasInRegionY
+:hasInRegionY rdf:type owl:DatatypeProperty ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:double ;
+                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                  ]
+                                                )
+                         ] .
+
+
+###  http://w3id.org/usability-ontology#hasMaxHeight
+:hasMaxHeight rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Variation ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:double ;
+                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                  ]
+                                                )
+                         ] .
+
+
+###  http://w3id.org/usability-ontology#hasMaxWidth
+:hasMaxWidth rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Variation ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:onDatatype xsd:double ;
+                          owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                 ]
+                                               )
+                        ] .
+
+
+###  http://w3id.org/usability-ontology#hasMinHeight
+:hasMinHeight rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Variation ;
+              rdfs:range [ rdf:type rdfs:Datatype ;
+                           owl:onDatatype xsd:double ;
+                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                  ]
+                                                )
+                         ] .
+
+
+###  http://w3id.org/usability-ontology#hasMinWidth
+:hasMinWidth rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Variation ;
+             rdfs:range [ rdf:type rdfs:Datatype ;
+                          owl:onDatatype xsd:double ;
+                          owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                 ]
+                                               )
+                        ] .
+
+
+###  http://w3id.org/usability-ontology#hasName
+:hasName rdf:type owl:DatatypeProperty ;
+         rdfs:range [ rdf:type rdfs:Datatype ;
+                      owl:onDatatype xsd:string ;
+                      owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                             ]
+                                           )
+                    ] .
+
+
+###  http://w3id.org/usability-ontology#hasStartDateTime
+:hasStartDateTime rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Session ;
+                  rdfs:range xsd:dateTimeStamp .
+
+
+###  http://w3id.org/usability-ontology#hasUid
+:hasUid rdf:type owl:DatatypeProperty ;
+        rdfs:range [ rdf:type rdfs:Datatype ;
+                     owl:onDatatype xsd:string ;
+                     owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                            ]
+                                          )
+                   ] .
+
+
+###  http://w3id.org/usability-ontology#hasWidth
+:hasWidth rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Image ;
+          rdfs:range [ rdf:type rdfs:Datatype ;
+                       owl:onDatatype xsd:double ;
+                       owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                              ]
+                                            )
+                     ] .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://w3id.org/usability-ontology#ActionEvent
+:ActionEvent rdf:type owl:Class ;
+             rdfs:subClassOf :Event ;
+             rdfs:comment "The base class for events which are user actions related to user interation with the interface (clicks, mouse movements, etc.)"@en ,
+                          "Базовый класс, предназначенный для событий, которые представляют собой действия пользователя, относящиеся к взаимодействию пользователя с интерфейсом (клики, перемещения мыши и др.)"@ru ;
+             rdfs:label "ActionEvent"@en ,
+                        "ДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#ClickMouseActionEvent
+:ClickMouseActionEvent rdf:type owl:Class ;
+                       rdfs:subClassOf :MouseActionEvent ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasInRegionX ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                           owl:onDatatype xsd:double ;
+                                                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                  ]
+                                                                                )
+                                                         ]
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasInRegionY ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                           owl:onDatatype xsd:double ;
+                                                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                  ]
+                                                                                )
+                                                         ]
+                                       ] ;
+                       rdfs:comment "The class that represents any mouse click"@en ,
+                                    "Клик (click) — щелчок по кнопке мыши."@ru ;
+                       rdfs:label "ClickMouseActionEvent"@en ,
+                                  "КликМышьДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#Command
+:Command rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :isContainedIn ;
+                           owl:someValuesFrom :CommandEvent
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :wasInvokedIn ;
+                           owl:someValuesFrom :CommandEvent
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasName ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                             owl:onDatatype xsd:string ;
+                                             owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                    ]
+                                                                  )
+                                           ]
+                         ] ;
+         rdfs:comment "Базовый класс команды, вызываемой пользователем."@ru ;
+         rdfs:label "Command"@en ,
+                    "The base class for the command called by user"@en ,
+                    "Команда"@ru .
+
+
+###  http://w3id.org/usability-ontology#CommandEvent
+:CommandEvent rdf:type owl:Class ;
+              rdfs:subClassOf :Event ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :contains ;
+                                owl:someValuesFrom :Command
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :wasAssociatedWith ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Command
+                              ] ;
+              rdfs:comment "The class that represents events, related with the fact of calling a certain command (function) by the user"@en ,
+                           "Класс, который описывает события команд. Они служат для фиксации факта вызова определенной команды (функции) пользователем."@ru ;
+              rdfs:label "CommandEvent"@en ,
+                         "КомандаСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :wasUsedIn ;
+                          owl:someValuesFrom :Session
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasName ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                   ]
+                                                                 )
+                                          ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasUid ;
+                          owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                   ]
+                                                                 )
+                                          ]
+                        ] ;
+        rdfs:comment "Устройство, на котором выполнялись(ются) сессии."@ru ;
+        rdfs:label "Device"@en ,
+                   "The device on which the sessions were performed."@en ,
+                   "Устройство"@ru .
+
+
+###  http://w3id.org/usability-ontology#DoubleClickMouseEvent
+:DoubleClickMouseEvent rdf:type owl:Class ;
+                       rdfs:subClassOf :ClickMouseActionEvent ;
+                       rdfs:comment "The class that represents a double mouse click"@en ,
+                                    "Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши."@ru ;
+                       rdfs:label "DoubleClickMouseEvent"@en ,
+                                  "ДвойнойКликМышьДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#DoubleTapTouchActionEvent
+:DoubleTapTouchActionEvent rdf:type owl:Class ;
+                           rdfs:subClassOf :TapTouchActionEvent ;
+                           rdfs:comment "The class that represents double tap - two short taps on the screen"@en ,
+                                        "Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику."@ru ;
+                           rdfs:label "DoubleTapTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#Event
+:Event rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :isContainedIn ;
+                         owl:someValuesFrom :Variation
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDateTime ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange xsd:dateTimeStamp
+                       ] ;
+       rdfs:comment "The base class for all different kinds of event that may be occured while the user is interacting with the software"@en ,
+                    "Базовый класс для событий, которые могут происходить при взаимодействии пользователя с программной системой"@ru ;
+       rdfs:label "Event"@en ,
+                  "Событие"@ru .
+
+
+###  http://w3id.org/usability-ontology#HoldTapTouchActionEvent
+:HoldTapTouchActionEvent rdf:type owl:Class ;
+                         rdfs:subClassOf :TapTouchActionEvent ;
+                         rdfs:comment "The class that represents touch-and-hold action - continuous touch with a single finger"@en ,
+                                      "Тач-энд-холд (touch and hold) — нажать и держать."@ru ;
+                         rdfs:label "HoldTapTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#Image
+:Image rdf:type owl:Class ;
+       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasBinaryData ;
+                         owl:someValuesFrom xsd:base64Binary
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDpiX ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:int ;
+                                           owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                                                  ]
+                                                                )
+                                         ]
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasDpiY ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:int ;
+                                           owl:withRestrictions ( [ xsd:minExclusive "0"^^xsd:int
+                                                                  ]
+                                                                )
+                                         ]
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasHeight ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:double ;
+                                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                  ]
+                                                                )
+                                         ]
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasWidth ;
+                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                           owl:onDatatype xsd:double ;
+                                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                  ]
+                                                                )
+                                         ]
+                       ] ;
+       rdfs:comment "Class that describes an image of the region variation"@ru ,
+                    "Класс, описывающий изображение, хранящее внешний вид вариации региона"@ru ;
+       rdfs:label "Image"@en ,
+                  "Изображение"@ru .
+
+
+###  http://w3id.org/usability-ontology#KeyboardActionEvent
+:KeyboardActionEvent rdf:type owl:Class ;
+                     rdfs:subClassOf :ActionEvent ;
+                     rdfs:comment "The class that represents actions related to user's manipulations with a keyboard"@en ,
+                                  "Класс, который описывает событий действий, связанных с манипуляцией пользователя с клавиатурой"@ru ;
+                     rdfs:label "KeyboardActionEvent"@en ,
+                                "КлавиатураДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#LongTapTouchActionEvent
+:LongTapTouchActionEvent rdf:type owl:Class ;
+                         rdfs:subClassOf :TapTouchActionEvent ;
+                         rdfs:comment "The class that represents touch - a touch that is slightly longer then tap"@en ,
+                                      "Тач (touch) — нажатие длиннее, чем Тап."@ru ;
+                         rdfs:label "LongTapTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#MouseActionEvent
+:MouseActionEvent rdf:type owl:Class ;
+                  rdfs:subClassOf :ActionEvent ;
+                  rdfs:comment "The class that represents actions related to user's manipulations with a mouse"@en ,
+                               "Класс, который описывает события действий, связанных с манипуляцией пользователя с мышью"@ru ;
+                  rdfs:label "MouseActionEvent"@en ,
+                             "МышьДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#MoveMouseActionEvent
+:MoveMouseActionEvent rdf:type owl:Class ;
+                      rdfs:subClassOf :MouseActionEvent ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasInRegionX ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                          owl:onDatatype xsd:double ;
+                                                          owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                 ]
+                                                                               )
+                                                        ]
+                                      ] ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty :hasInRegionY ;
+                                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                        owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                          owl:onDatatype xsd:double ;
+                                                          owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                 ]
+                                                                               )
+                                                        ]
+                                      ] ;
+                      rdfs:comment "The class that represents movements of cursor. hasInRegionX and hasInRegionY properties store information about the new cursor coordinates after the movement"@en ,
+                                   "Класс, который соответствует событию движения курсора мыши. Свойства hasInRegionX и hasInRegionY позволяют указать новые координаты курсора мыши после перемещения"@ru ;
+                      rdfs:label "MoveMouseAcitonEvent"@en ,
+                                 "ДвижениеМышьДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#PinchTouchActionEvent
+:PinchTouchActionEvent rdf:type owl:Class ;
+                       rdfs:subClassOf :TouchActionEvent ;
+                       rdfs:comment "The class that represents pinch - a contractive movement with two fingers on the screen to scale down the image."@en ,
+                                    "Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения."@ru ;
+                       rdfs:label "PinchTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :contains ;
+                          owl:someValuesFrom :Variation
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isContainedIn ;
+                          owl:someValuesFrom :Session
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasMaxHeight ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasMaxWidth ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasMinHeight ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasMinWidth ;
+                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasName ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                            owl:onDatatype xsd:string ;
+                                            owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                   ]
+                                                                 )
+                                          ]
+                        ] ;
+        rdfs:comment "A fragment of GUI, for example, the whole window, or a part of it"@en ,
+                     "Область пользовательского интерфейса, например, окно целиком, либо его отдельная часть"@ru ;
+        rdfs:label "Region"@en ,
+                   "Регион"@ru .
+
+
+###  http://w3id.org/usability-ontology#ScrollMouseActionEvent
+:ScrollMouseActionEvent rdf:type owl:Class ;
+                        rdfs:subClassOf :MouseActionEvent ;
+                        rdfs:comment "The class that represents a mouse wheel scroll"@en ,
+                                     "Класс, который соответствует событию прокрутки колесика мыши"@ru ;
+                        rdfs:label "ScrollMouseActionEvent"@en ,
+                                   "ПрокруткаМышьДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#Session
+:Session rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :contains ;
+                           owl:someValuesFrom :Region
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :wasPerformedBy ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :User
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :wasPerformedOn ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onClass :Device
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasEndDateTime ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:dateTimeStamp
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasStartDateTime ;
+                           owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange xsd:dateTimeStamp
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasUid ;
+                           owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                           owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                             owl:onDatatype xsd:string ;
+                                             owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                    ]
+                                                                  )
+                                           ]
+                         ] ;
+         rdfs:comment "A period of time when a user interacts with the software"@en ,
+                      "Временной промежуток, в течение которого пользователь взаимодействует с программной системой"@ru ;
+         rdfs:label "Session"@en ,
+                    "Сессия"@ru .
+
+
+###  http://w3id.org/usability-ontology#SingleClickMouseEvent
+:SingleClickMouseEvent rdf:type owl:Class ;
+                       rdfs:subClassOf :ClickMouseActionEvent ;
+                       rdfs:comment "The class that represents a single mouse click"@en ,
+                                    "Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие."@ru ;
+                       rdfs:label "SingleClickMouseEvent"@en ,
+                                  "ОдинарныйКликМышьДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#SingleTapTouchActionEvent
+:SingleTapTouchActionEvent rdf:type owl:Class ;
+                           rdfs:subClassOf :TapTouchActionEvent ;
+                           rdfs:comment "The class that represents tap action - single short touch with one finger"@en ,
+                                        "Тап, тэп (tap) — короткое нажатие пальцем, сродни клику."@ru ;
+                           rdfs:label "SingleTapTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#StretchTouchActionEvent
+:StretchTouchActionEvent rdf:type owl:Class ;
+                         rdfs:subClassOf :TouchActionEvent ;
+                         rdfs:comment "The class that represents stretch (pinch it open) - tensile movement with two fingers on the screen to enlarge the image."@en ,
+                                      "Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения."@ru ;
+                         rdfs:label "StretchTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#SwipeTouchActionEvent
+:SwipeTouchActionEvent rdf:type owl:Class ;
+                       rdfs:subClassOf :TouchActionEvent ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasInRegionX ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                           owl:onDatatype xsd:double ;
+                                                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                  ]
+                                                                                )
+                                                         ]
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :hasInRegionY ;
+                                         owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                         owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                           owl:onDatatype xsd:double ;
+                                                           owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                  ]
+                                                                                )
+                                                         ]
+                                       ] ;
+                       rdfs:comment "The class the represents swipe (slide) - a continuous movement of the finger across the screen"@en ,
+                                    "Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану."@ru ;
+                       rdfs:label "SwipeTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#TapTouchActionEvent
+:TapTouchActionEvent rdf:type owl:Class ;
+                     rdfs:subClassOf :TouchActionEvent ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasInRegionX ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                         owl:onDatatype xsd:double ;
+                                                         owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                ]
+                                                                              )
+                                                       ]
+                                     ] ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :hasInRegionY ;
+                                       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                       owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                                         owl:onDatatype xsd:double ;
+                                                         owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                                ]
+                                                                              )
+                                                       ]
+                                     ] ;
+                     rdfs:comment "The class that represents differend kinds events related to user's tap on the touch screen"@en ,
+                                  "Класс, предназначенный для описания различных видов тапов - прикосновений пользователя к экрану одним пальцем без движения"@ru ;
+                     rdfs:label "TapTouchActionEvent"@en .
+
+
+###  http://w3id.org/usability-ontology#TouchActionEvent
+:TouchActionEvent rdf:type owl:Class ;
+                  rdfs:subClassOf :ActionEvent ;
+                  rdfs:comment "The class that represents events related to user interations with touchscreen, like smartphone or tablet PC"@en ,
+                               "Класс, который описывает события действий, связанных с взаимодействием пользователя с сенсорным экраном (тачскрин, англ. touchscreen), например, дисплеем телефона или планшетного компьютера"@ru ;
+                  rdfs:label "TouchActionEvent"@en ,
+                             "КасаниеДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#TypeKeyboardActionEvent
+:TypeKeyboardActionEvent rdf:type owl:Class ;
+                         rdfs:subClassOf :KeyboardActionEvent ;
+                         rdfs:comment "The class that represents clicks on a keyboard"@en ,
+                                      "Класс, который описывает события нажатия клавиш клавиатуры"@ru ;
+                         rdfs:label "TypeKeyboardActionEvent"@en ,
+                                    "ВводКлавиатураДействиеСобытие"@ru .
+
+
+###  http://w3id.org/usability-ontology#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :performed ;
+                        owl:someValuesFrom :Session
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasName ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                 ]
+                                                               )
+                                        ]
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :hasUid ;
+                        owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                          owl:onDatatype xsd:string ;
+                                          owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                 ]
+                                                               )
+                                        ]
+                      ] ;
+      rdfs:comment "The user who runs sessions"@en ,
+                   "Пользователь, который выполнял(ет) сессии."@ru ;
+      rdfs:label "User"@en ,
+                 "Пользователь"@ru .
+
+
+###  http://w3id.org/usability-ontology#Variation
+:Variation rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :contains ;
+                             owl:someValuesFrom :Event
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :isContainedIn ;
+                             owl:someValuesFrom :Region
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasImage ;
+                             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Image
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasMaxHeight ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasMaxWidth ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasMinHeight ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasMinWidth ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:double ;
+                                               owl:withRestrictions ( [ xsd:minInclusive "0.0"^^xsd:double
+                                                                      ]
+                                                                    )
+                                             ]
+                           ] ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasName ;
+                             owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onDataRange [ rdf:type rdfs:Datatype ;
+                                               owl:onDatatype xsd:string ;
+                                               owl:withRestrictions ( [ xsd:minLength "1"^^xsd:int
+                                                                      ]
+                                                                    )
+                                             ]
+                           ] ;
+           rdfs:comment "Class that describes a region variation, since a region may have one or more variations. Variation is a unique combination of region image's height and width, or their range"@en ,
+                        "Класс предназначен для описания вариации региона, так как каждый регион, в свою очередь, может иметь одну или более вариаций. Под вариацией региона в общем случае может пониматься уникальное сочетание параметров высоты и ширины изображения региона, либо их диапазон"@ru ;
+           rdfs:label "Variation"@en ,
+                      "ВариацияРегиона"@ru .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://w3id.org/usability-ontology#CommandA
+:CommandA rdf:type owl:NamedIndividual ,
+                   :Command ;
+          :hasName "CommandA" .
+
+
+###  http://w3id.org/usability-ontology#CommandB
+:CommandB rdf:type owl:NamedIndividual ,
+                   :Command ;
+          :isContainedIn :RegionVariation211 ;
+          :wasInvokedIn :RegionVariation211 ;
+          :hasName "CommandB" .
+
+
+###  http://w3id.org/usability-ontology#CommandEvent1113
+:CommandEvent1113 rdf:type owl:NamedIndividual ,
+                           :CommandEvent ;
+                  :contains :CommandA ;
+                  :isContainedIn :RegionVariation111 ;
+                  :wasAssociatedWith :CommandA .
+
+
+###  http://w3id.org/usability-ontology#CommandEvent1114
+:CommandEvent1114 rdf:type owl:NamedIndividual ,
+                           :CommandEvent ;
+                  :contains :CommandA ;
+                  :isContainedIn :RegionVariation111 ;
+                  :wasAssociatedWith :CommandA .
+
+
+###  http://w3id.org/usability-ontology#CommandEvent2112
+:CommandEvent2112 rdf:type owl:NamedIndividual ,
+                           :CommandEvent ;
+                  :contains :CommandB ;
+                  :wasAssociatedWith :CommandB .
+
+
+###  http://w3id.org/usability-ontology#Device1
+:Device1 rdf:type owl:NamedIndividual ,
+                  :Device ;
+         :wasUsedIn :Session1 ,
+                    :Session2 .
+
+
+###  http://w3id.org/usability-ontology#Event1111
+:Event1111 rdf:type owl:NamedIndividual ,
+                    :Event ;
+           :hasInRegionX "27.0"^^xsd:double ;
+           :hasInRegionY "625.0"^^xsd:double .
+
+
+###  http://w3id.org/usability-ontology#Event1112
+:Event1112 rdf:type owl:NamedIndividual ,
+                    :Event .
+
+
+###  http://w3id.org/usability-ontology#Event1121
+:Event1121 rdf:type owl:NamedIndividual ,
+                    :Event .
+
+
+###  http://w3id.org/usability-ontology#Event1122
+:Event1122 rdf:type owl:NamedIndividual ,
+                    :Event .
+
+
+###  http://w3id.org/usability-ontology#Event2111
+:Event2111 rdf:type owl:NamedIndividual ,
+                    :Event .
+
+
+###  http://w3id.org/usability-ontology#Image111
+:Image111 rdf:type owl:NamedIndividual ,
+                   :Image .
+
+
+###  http://w3id.org/usability-ontology#Image112
+:Image112 rdf:type owl:NamedIndividual ,
+                   :Image .
+
+
+###  http://w3id.org/usability-ontology#Image211
+:Image211 rdf:type owl:NamedIndividual ,
+                   :Image .
+
+
+###  http://w3id.org/usability-ontology#Region11
+:Region11 rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :contains :RegionVariation111 ,
+                    :RegionVariation112 ;
+          :hasName "Region11" .
+
+
+###  http://w3id.org/usability-ontology#Region21
+:Region21 rdf:type owl:NamedIndividual ,
+                   :Region ;
+          :contains :RegionVariation211 ;
+          :hasName "Region21" .
+
+
+###  http://w3id.org/usability-ontology#RegionVariation111
+:RegionVariation111 rdf:type owl:NamedIndividual ,
+                             :Variation ;
+                    :contains :CommandEvent1113 ,
+                              :CommandEvent1114 ,
+                              :Event1111 ,
+                              :Event1112 ;
+                    :hasImage :Image111 ;
+                    :hasName "RegionVariation111" .
+
+
+###  http://w3id.org/usability-ontology#RegionVariation112
+:RegionVariation112 rdf:type owl:NamedIndividual ,
+                             :Variation ;
+                    :hasImage :Image112 .
+
+
+###  http://w3id.org/usability-ontology#RegionVariation211
+:RegionVariation211 rdf:type owl:NamedIndividual ,
+                             :Variation ;
+                    :contains :CommandEvent2112 ;
+                    :hasImage :Image211 .
+
+
+###  http://w3id.org/usability-ontology#Session1
+:Session1 rdf:type owl:NamedIndividual ,
+                   :Session ;
+          :contains :Region11 .
+
+
+###  http://w3id.org/usability-ontology#Session2
+:Session2 rdf:type owl:NamedIndividual ,
+                   :Session ;
+          :contains :Region21 .
+
+
+###  http://w3id.org/usability-ontology#User1
+:User1 rdf:type owl:NamedIndividual ,
+                :User ;
+       :performed :Session1 ;
+       :hasName "Ivan Ivanov" .
+
+
+###  http://w3id.org/usability-ontology#User2
+:User2 rdf:type owl:NamedIndividual ,
+                :User ;
+       :performed :Session2 ;
+       :hasName "Petr Petrov" .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

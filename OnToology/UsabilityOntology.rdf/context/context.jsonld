@@ -1,0 +1,198 @@
+{
+  "@context" : {
+    "ScrollMouseActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#ScrollMouseActionEvent"
+    },
+    "MoveMouseActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#MoveMouseActionEvent"
+    },
+    "SwipeTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#SwipeTouchActionEvent"
+    },
+    "hasDpiX" : {
+      "@id" : "http://w3id.org/usability-ontology#hasDpiX"
+    },
+    "hasImage" : {
+      "@id" : "http://w3id.org/usability-ontology#hasImage",
+      "@type" : "@id"
+    },
+    "TapTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#TapTouchActionEvent"
+    },
+    "TypeKeyboardActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#TypeKeyboardActionEvent"
+    },
+    "hasDpiY" : {
+      "@id" : "http://w3id.org/usability-ontology#hasDpiY"
+    },
+    "hasInRegionY" : {
+      "@id" : "http://w3id.org/usability-ontology#hasInRegionY"
+    },
+    "hasName" : {
+      "@id" : "http://w3id.org/usability-ontology#hasName"
+    },
+    "ActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#ActionEvent"
+    },
+    "Variation" : {
+      "@id" : "http://w3id.org/usability-ontology#Variation"
+    },
+    "hasMaxWidth" : {
+      "@id" : "http://w3id.org/usability-ontology#hasMaxWidth"
+    },
+    "TouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#TouchActionEvent"
+    },
+    "DoubleClickMouseEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#DoubleClickMouseEvent"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "contains" : {
+      "@id" : "http://w3id.org/usability-ontology#contains",
+      "@type" : "@id"
+    },
+    "wasPerformedOn" : {
+      "@id" : "http://w3id.org/usability-ontology#wasPerformedOn",
+      "@type" : "@id"
+    },
+    "wasImaged" : {
+      "@id" : "http://w3id.org/usability-ontology#wasImaged",
+      "@type" : "@id"
+    },
+    "User" : {
+      "@id" : "http://w3id.org/usability-ontology#User"
+    },
+    "hasBinaryData" : {
+      "@id" : "http://w3id.org/usability-ontology#hasBinaryData",
+      "@type" : "http://www.w3.org/2001/XMLSchema#base64Binary"
+    },
+    "MouseActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#MouseActionEvent"
+    },
+    "Event" : {
+      "@id" : "http://w3id.org/usability-ontology#Event"
+    },
+    "ClickMouseActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#ClickMouseActionEvent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "KeyboardActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#KeyboardActionEvent"
+    },
+    "hasCommandName" : {
+      "@id" : "http://w3id.org/usability-ontology#hasCommandName"
+    },
+    "isContainedIn" : {
+      "@id" : "http://w3id.org/usability-ontology#isContainedIn",
+      "@type" : "@id"
+    },
+    "hasMaxHeight" : {
+      "@id" : "http://w3id.org/usability-ontology#hasMaxHeight"
+    },
+    "hasMinHeight" : {
+      "@id" : "http://w3id.org/usability-ontology#hasMinHeight"
+    },
+    "hasMinWidth" : {
+      "@id" : "http://w3id.org/usability-ontology#hasMinWidth"
+    },
+    "DoubleTapTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#DoubleTapTouchActionEvent"
+    },
+    "hasWidth" : {
+      "@id" : "http://w3id.org/usability-ontology#hasWidth"
+    },
+    "hasInRegionX" : {
+      "@id" : "http://w3id.org/usability-ontology#hasInRegionX"
+    },
+    "hasEndDateTime" : {
+      "@id" : "http://w3id.org/usability-ontology#hasEndDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "hasHeight" : {
+      "@id" : "http://w3id.org/usability-ontology#hasHeight"
+    },
+    "hasDateTime" : {
+      "@id" : "http://w3id.org/usability-ontology#hasDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "HoldTapTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#HoldTapTouchActionEvent"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Command" : {
+      "@id" : "http://w3id.org/usability-ontology#Command"
+    },
+    "wasAssociatedWith" : {
+      "@id" : "http://w3id.org/usability-ontology#wasAssociatedWith",
+      "@type" : "@id"
+    },
+    "LongTapTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#LongTapTouchActionEvent"
+    },
+    "performed" : {
+      "@id" : "http://w3id.org/usability-ontology#performed",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/elements/1.1/publisher"
+    },
+    "wasUsedIn" : {
+      "@id" : "http://w3id.org/usability-ontology#wasUsedIn",
+      "@type" : "@id"
+    },
+    "wasPerformedBy" : {
+      "@id" : "http://w3id.org/usability-ontology#wasPerformedBy",
+      "@type" : "@id"
+    },
+    "hasUid" : {
+      "@id" : "http://w3id.org/usability-ontology#hasUid"
+    },
+    "wasInvokedIn" : {
+      "@id" : "http://w3id.org/usability-ontology#wasInvokedIn",
+      "@type" : "@id"
+    },
+    "SingleTapTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#SingleTapTouchActionEvent"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Image" : {
+      "@id" : "http://w3id.org/usability-ontology#Image"
+    },
+    "CommandEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#CommandEvent"
+    },
+    "Session" : {
+      "@id" : "http://w3id.org/usability-ontology#Session"
+    },
+    "Device" : {
+      "@id" : "http://w3id.org/usability-ontology#Device"
+    },
+    "PinchTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#PinchTouchActionEvent"
+    },
+    "hasStartDateTime" : {
+      "@id" : "http://w3id.org/usability-ontology#hasStartDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "Region" : {
+      "@id" : "http://w3id.org/usability-ontology#Region"
+    },
+    "SingleClickMouseEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#SingleClickMouseEvent"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/elements/1.1/description"
+    },
+    "StretchTouchActionEvent" : {
+      "@id" : "http://w3id.org/usability-ontology#StretchTouchActionEvent"
+    }
+  }
+}
