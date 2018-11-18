@@ -11,7 +11,7 @@
     <owl:Ontology rdf:about="http://w3id.org/usability">
         <dc:creator>Danilov Nikita</dc:creator>
         <dc:description xml:lang="en">Ontology &apos;Usability&apos; created to describe and store information about interactions of user with a software user interface</dc:description>
-        <dc:description xml:lang="en">Онтология &quot;Удобство испльзования&quot; предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса</dc:description>
+        <dc:description xml:lang="ru">Онтология &quot;Удобство испльзования&quot; предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса</dc:description>
         <dc:publisher>Denis Palashevskiy</dc:publisher>
         <dc:title xml:lang="en">Usability</dc:title>
         <dc:title xml:lang="ru">Удобство использования</dc:title>

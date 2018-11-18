@@ -1210,7 +1210,7 @@
     "@language" : "en",
     "@value" : "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"
   }, {
-    "@language" : "en",
+    "@language" : "ru",
     "@value" : "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"
   } ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {

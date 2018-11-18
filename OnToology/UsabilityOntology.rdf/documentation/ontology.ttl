@@ -9,7 +9,7 @@
 <http://w3id.org/usability> rdf:type owl:Ontology ;
                              <http://purl.org/dc/elements/1.1/creator> "Danilov Nikita" ;
                              <http://purl.org/dc/elements/1.1/description> "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"@en ,
-                                                                           "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@en ;
+                                                                           "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@ru ;
                              <http://purl.org/dc/elements/1.1/publisher> "Denis Palashevskiy" ;
                              <http://purl.org/dc/elements/1.1/title> "Usability"@en ,
                                                                      "Удобство использования"@ru .
