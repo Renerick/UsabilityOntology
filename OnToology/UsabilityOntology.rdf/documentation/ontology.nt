@@ -1,7 +1,7 @@
 <http://w3id.org/usability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://w3id.org/usability> <http://purl.org/dc/elements/1.1/creator> "Danilov Nikita" .
 <http://w3id.org/usability> <http://purl.org/dc/elements/1.1/description> "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"@en .
-<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/description> "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@en .
+<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/description> "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@ru .
 <http://w3id.org/usability> <http://purl.org/dc/elements/1.1/publisher> "Denis Palashevskiy" .
 <http://w3id.org/usability> <http://purl.org/dc/elements/1.1/title> "Usability"@en .
 <http://w3id.org/usability> <http://purl.org/dc/elements/1.1/title> "Удобство использования"@ru .
