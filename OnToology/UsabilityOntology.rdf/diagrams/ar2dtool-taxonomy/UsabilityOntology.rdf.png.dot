@@ -1,25 +1,25 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1000"
-node [shape = rectangle, color="black"]; "base:ClickMouseActionEvent" "base:HoldTapTouchActionEvent" "base:MouseActionEvent" "base:LongTapTouchActionEvent" "base:MoveMouseActionEvent" "base:Event" "base:TapTouchActionEvent" "base:DoubleClickMouseEvent" "base:SingleTapTouchActionEvent" "base:ActionEvent" "base:CommandEvent" "base:DoubleTapTouchActionEvent" "base:TouchActionEvent" "base:StretchTouchActionEvent" "base:TypeKeyboardActionEvent" "base:PinchTouchActionEvent" "base:KeyboardActionEvent" "base:SingleClickMouseEvent" "base:SwipeTouchActionEvent" "base:ScrollMouseActionEvent" ; /*classes style*/
-	"base:SingleTapTouchActionEvent" -> "base:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:ActionEvent" -> "base:Event" [ label = "rdfs:subClassOf" ];
-	"base:TapTouchActionEvent" -> "base:TouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:DoubleClickMouseEvent" -> "base:ClickMouseActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:CommandEvent" -> "base:Event" [ label = "rdfs:subClassOf" ];
-	"base:TypeKeyboardActionEvent" -> "base:KeyboardActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:TouchActionEvent" -> "base:ActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:MoveMouseActionEvent" -> "base:MouseActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:HoldTapTouchActionEvent" -> "base:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:ScrollMouseActionEvent" -> "base:MouseActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:DoubleTapTouchActionEvent" -> "base:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:PinchTouchActionEvent" -> "base:TouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:SingleClickMouseEvent" -> "base:ClickMouseActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:LongTapTouchActionEvent" -> "base:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:SwipeTouchActionEvent" -> "base:TouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:KeyboardActionEvent" -> "base:ActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:StretchTouchActionEvent" -> "base:TouchActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:ClickMouseActionEvent" -> "base:MouseActionEvent" [ label = "rdfs:subClassOf" ];
-	"base:MouseActionEvent" -> "base:ActionEvent" [ label = "rdfs:subClassOf" ];
+node [shape = rectangle, color="black"]; "usability:ClickMouseActionEvent" "usability:HoldTapTouchActionEvent" "usability:MouseActionEvent" "usability:LongTapTouchActionEvent" "usability:MoveMouseActionEvent" "usability:Event" "usability:TapTouchActionEvent" "usability:DoubleClickMouseEvent" "usability:SingleTapTouchActionEvent" "usability:ActionEvent" "usability:CommandEvent" "usability:DoubleTapTouchActionEvent" "usability:TouchActionEvent" "usability:StretchTouchActionEvent" "usability:TypeKeyboardActionEvent" "usability:PinchTouchActionEvent" "usability:KeyboardActionEvent" "usability:SingleClickMouseEvent" "usability:SwipeTouchActionEvent" "usability:ScrollMouseActionEvent" ; /*classes style*/
+	"usability:SingleTapTouchActionEvent" -> "usability:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:ActionEvent" -> "usability:Event" [ label = "rdfs:subClassOf" ];
+	"usability:TapTouchActionEvent" -> "usability:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:DoubleClickMouseEvent" -> "usability:ClickMouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:CommandEvent" -> "usability:Event" [ label = "rdfs:subClassOf" ];
+	"usability:TypeKeyboardActionEvent" -> "usability:KeyboardActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:TouchActionEvent" -> "usability:ActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:MoveMouseActionEvent" -> "usability:MouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:HoldTapTouchActionEvent" -> "usability:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:ScrollMouseActionEvent" -> "usability:MouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:DoubleTapTouchActionEvent" -> "usability:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:PinchTouchActionEvent" -> "usability:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:SingleClickMouseEvent" -> "usability:ClickMouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:LongTapTouchActionEvent" -> "usability:TapTouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:SwipeTouchActionEvent" -> "usability:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:KeyboardActionEvent" -> "usability:ActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:StretchTouchActionEvent" -> "usability:TouchActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:ClickMouseActionEvent" -> "usability:MouseActionEvent" [ label = "rdfs:subClassOf" ];
+	"usability:MouseActionEvent" -> "usability:ActionEvent" [ label = "rdfs:subClassOf" ];
 
 }
