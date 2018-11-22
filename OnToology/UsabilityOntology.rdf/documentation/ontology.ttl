@@ -1,24 +1,24 @@
-@prefix : <http://w3id.org/usability#> .
+@prefix : <https://w3id.org/usability#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://w3id.org/usability> .
+@base <https://w3id.org/usability> .
 
-<http://w3id.org/usability> rdf:type owl:Ontology ;
-                             <http://purl.org/dc/elements/1.1/creator> "Danilov Nikita" ;
-                             <http://purl.org/dc/elements/1.1/description> "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"@en ,
-                                                                           "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@ru ;
-                             <http://purl.org/dc/elements/1.1/publisher> "Denis Palashevskiy" ;
-                             <http://purl.org/dc/elements/1.1/title> "Usability"@en ,
-                                                                     "Удобство использования"@ru .
+<https://w3id.org/usability> rdf:type owl:Ontology ;
+                              <http://purl.org/dc/elements/1.1/creator> "Danilov Nikita" ;
+                              <http://purl.org/dc/elements/1.1/description> "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"@en ,
+                                                                            "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@ru ;
+                              <http://purl.org/dc/elements/1.1/publisher> "Denis Palashevskiy" ;
+                              <http://purl.org/dc/elements/1.1/title> "Usability"@en ,
+                                                                      "Удобство использования"@ru .
 
 #################################################################
 #    Object Properties
 #################################################################
 
-###  http://w3id.org/usability#contains
+###  https://w3id.org/usability#contains
 :contains rdf:type owl:ObjectProperty ;
           owl:inverseOf :isContainedIn ;
           rdf:type owl:TransitiveProperty ;
@@ -28,7 +28,7 @@
                      "cодержит"@ru .
 
 
-###  http://w3id.org/usability#hasImage
+###  https://w3id.org/usability#hasImage
 :hasImage rdf:type owl:ObjectProperty ;
           owl:inverseOf :wasImaged ;
           rdfs:domain :Variation ;
@@ -39,7 +39,7 @@
                      "имеетИзображение"@ru .
 
 
-###  http://w3id.org/usability#isContainedIn
+###  https://w3id.org/usability#isContainedIn
 :isContainedIn rdf:type owl:ObjectProperty ,
                         owl:TransitiveProperty ;
                rdfs:comment "A transitive property which determines that some object is contained/stored/located inside of some subject. Inverse of contains"@en ,
@@ -48,7 +48,7 @@
                           "содержитсяВ"@ru .
 
 
-###  http://w3id.org/usability#performed
+###  https://w3id.org/usability#performed
 :performed rdf:type owl:ObjectProperty ;
            owl:inverseOf :wasPerformedBy ;
            rdfs:domain :User ;
@@ -59,7 +59,7 @@
                       "выполнил"@ru .
 
 
-###  http://w3id.org/usability#wasAssociatedWith
+###  https://w3id.org/usability#wasAssociatedWith
 :wasAssociatedWith rdf:type owl:ObjectProperty ;
                    owl:inverseOf :wasInvokedIn ;
                    rdfs:comment "The property that associates command event with the specific command instance"@en ,
@@ -68,7 +68,7 @@
                               "связанаС"@ru .
 
 
-###  http://w3id.org/usability#wasImaged
+###  https://w3id.org/usability#wasImaged
 :wasImaged rdf:type owl:ObjectProperty ;
            rdfs:domain :Image ;
            rdfs:range :Variation ;
@@ -78,7 +78,7 @@
                       "изображает"@ru .
 
 
-###  http://w3id.org/usability#wasInvokedIn
+###  https://w3id.org/usability#wasInvokedIn
 :wasInvokedIn rdf:type owl:ObjectProperty ;
               rdfs:comment "The property that associates specific command with the event in which the command was called"@en ,
                            "Связывает команду с командным событием, в котором команда была вызвана"@ru ;
@@ -86,7 +86,7 @@
                          "былоВызваноВ"@en .
 
 
-###  http://w3id.org/usability#wasPerformedBy
+###  https://w3id.org/usability#wasPerformedBy
 :wasPerformedBy rdf:type owl:ObjectProperty ;
                 rdfs:domain :Session ;
                 rdfs:range :User ;
@@ -96,7 +96,7 @@
                            "былаВыполненаПользователем"@ru .
 
 
-###  http://w3id.org/usability#wasPerformedOn
+###  https://w3id.org/usability#wasPerformedOn
 :wasPerformedOn rdf:type owl:ObjectProperty ;
                 owl:inverseOf :wasUsedIn ;
                 rdfs:domain :Session ;
@@ -107,7 +107,7 @@
                            "былаВыполненаНа"@ru .
 
 
-###  http://w3id.org/usability#wasUsedIn
+###  https://w3id.org/usability#wasUsedIn
 :wasUsedIn rdf:type owl:ObjectProperty ;
            rdfs:domain :Device ;
            rdfs:range :Session ;
@@ -121,12 +121,12 @@
 #    Data properties
 #################################################################
 
-###  http://w3id.org/usability#hasBinaryData
+###  https://w3id.org/usability#hasBinaryData
 :hasBinaryData rdf:type owl:DatatypeProperty ;
                rdfs:range xsd:base64Binary .
 
 
-###  http://w3id.org/usability#hasCommandName
+###  https://w3id.org/usability#hasCommandName
 :hasCommandName rdf:type owl:DatatypeProperty ;
                 rdfs:domain :CommandEvent ;
                 rdfs:range [ rdf:type rdfs:Datatype ;
@@ -137,13 +137,13 @@
                            ] .
 
 
-###  http://w3id.org/usability#hasDateTime
+###  https://w3id.org/usability#hasDateTime
 :hasDateTime rdf:type owl:DatatypeProperty ;
              rdfs:domain :Event ;
              rdfs:range xsd:dateTimeStamp .
 
 
-###  http://w3id.org/usability#hasDpiX
+###  https://w3id.org/usability#hasDpiX
 :hasDpiX rdf:type owl:DatatypeProperty ;
          rdfs:domain :Image ;
          rdfs:range [ rdf:type rdfs:Datatype ;
@@ -154,7 +154,7 @@
                     ] .
 
 
-###  http://w3id.org/usability#hasDpiY
+###  https://w3id.org/usability#hasDpiY
 :hasDpiY rdf:type owl:DatatypeProperty ;
          rdfs:domain :Image ;
          rdfs:range [ rdf:type rdfs:Datatype ;
@@ -165,13 +165,13 @@
                     ] .
 
 
-###  http://w3id.org/usability#hasEndDateTime
+###  https://w3id.org/usability#hasEndDateTime
 :hasEndDateTime rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Session ;
                 rdfs:range xsd:dateTimeStamp .
 
 
-###  http://w3id.org/usability#hasHeight
+###  https://w3id.org/usability#hasHeight
 :hasHeight rdf:type owl:DatatypeProperty ;
            rdfs:domain :Image ;
            rdfs:range [ rdf:type rdfs:Datatype ;
@@ -182,7 +182,7 @@
                       ] .
 
 
-###  http://w3id.org/usability#hasInRegionX
+###  https://w3id.org/usability#hasInRegionX
 :hasInRegionX rdf:type owl:DatatypeProperty ;
               rdfs:range [ rdf:type rdfs:Datatype ;
                            owl:onDatatype xsd:double ;
@@ -192,7 +192,7 @@
                          ] .
 
 
-###  http://w3id.org/usability#hasInRegionY
+###  https://w3id.org/usability#hasInRegionY
 :hasInRegionY rdf:type owl:DatatypeProperty ;
               rdfs:range [ rdf:type rdfs:Datatype ;
                            owl:onDatatype xsd:double ;
@@ -202,7 +202,7 @@
                          ] .
 
 
-###  http://w3id.org/usability#hasMaxHeight
+###  https://w3id.org/usability#hasMaxHeight
 :hasMaxHeight rdf:type owl:DatatypeProperty ;
               rdfs:domain :Variation ;
               rdfs:range [ rdf:type rdfs:Datatype ;
@@ -213,7 +213,7 @@
                          ] .
 
 
-###  http://w3id.org/usability#hasMaxWidth
+###  https://w3id.org/usability#hasMaxWidth
 :hasMaxWidth rdf:type owl:DatatypeProperty ;
              rdfs:domain :Variation ;
              rdfs:range [ rdf:type rdfs:Datatype ;
@@ -224,7 +224,7 @@
                         ] .
 
 
-###  http://w3id.org/usability#hasMinHeight
+###  https://w3id.org/usability#hasMinHeight
 :hasMinHeight rdf:type owl:DatatypeProperty ;
               rdfs:domain :Variation ;
               rdfs:range [ rdf:type rdfs:Datatype ;
@@ -235,7 +235,7 @@
                          ] .
 
 
-###  http://w3id.org/usability#hasMinWidth
+###  https://w3id.org/usability#hasMinWidth
 :hasMinWidth rdf:type owl:DatatypeProperty ;
              rdfs:domain :Variation ;
              rdfs:range [ rdf:type rdfs:Datatype ;
@@ -246,7 +246,7 @@
                         ] .
 
 
-###  http://w3id.org/usability#hasName
+###  https://w3id.org/usability#hasName
 :hasName rdf:type owl:DatatypeProperty ;
          rdfs:range [ rdf:type rdfs:Datatype ;
                       owl:onDatatype xsd:string ;
@@ -256,13 +256,13 @@
                     ] .
 
 
-###  http://w3id.org/usability#hasStartDateTime
+###  https://w3id.org/usability#hasStartDateTime
 :hasStartDateTime rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Session ;
                   rdfs:range xsd:dateTimeStamp .
 
 
-###  http://w3id.org/usability#hasUid
+###  https://w3id.org/usability#hasUid
 :hasUid rdf:type owl:DatatypeProperty ;
         rdfs:range [ rdf:type rdfs:Datatype ;
                      owl:onDatatype xsd:string ;
@@ -272,7 +272,7 @@
                    ] .
 
 
-###  http://w3id.org/usability#hasWidth
+###  https://w3id.org/usability#hasWidth
 :hasWidth rdf:type owl:DatatypeProperty ;
           rdfs:domain :Image ;
           rdfs:range [ rdf:type rdfs:Datatype ;
@@ -287,7 +287,7 @@
 #    Classes
 #################################################################
 
-###  http://w3id.org/usability#ActionEvent
+###  https://w3id.org/usability#ActionEvent
 :ActionEvent rdf:type owl:Class ;
              rdfs:subClassOf :Event ;
              rdfs:comment "The base class for events which are user actions related to user interation with the interface (clicks, mouse movements, etc.)"@en ,
@@ -296,7 +296,7 @@
                         "ДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#ClickMouseActionEvent
+###  https://w3id.org/usability#ClickMouseActionEvent
 :ClickMouseActionEvent rdf:type owl:Class ;
                        rdfs:subClassOf :MouseActionEvent ,
                                        [ rdf:type owl:Restriction ;
@@ -325,7 +325,7 @@
                                   "КликМышьДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#Command
+###  https://w3id.org/usability#Command
 :Command rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :isContainedIn ;
@@ -351,7 +351,7 @@
                     "Команда"@ru .
 
 
-###  http://w3id.org/usability#CommandEvent
+###  https://w3id.org/usability#CommandEvent
 :CommandEvent rdf:type owl:Class ;
               rdfs:subClassOf :Event ,
                               [ rdf:type owl:Restriction ;
@@ -369,7 +369,7 @@
                          "КомандаСобытие"@ru .
 
 
-###  http://w3id.org/usability#Device
+###  https://w3id.org/usability#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :wasUsedIn ;
@@ -401,7 +401,7 @@
                    "Устройство"@ru .
 
 
-###  http://w3id.org/usability#DoubleClickMouseEvent
+###  https://w3id.org/usability#DoubleClickMouseEvent
 :DoubleClickMouseEvent rdf:type owl:Class ;
                        rdfs:subClassOf :ClickMouseActionEvent ;
                        rdfs:comment "The class that represents a double mouse click"@en ,
@@ -410,7 +410,7 @@
                                   "ДвойнойКликМышьДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#DoubleTapTouchActionEvent
+###  https://w3id.org/usability#DoubleTapTouchActionEvent
 :DoubleTapTouchActionEvent rdf:type owl:Class ;
                            rdfs:subClassOf :TapTouchActionEvent ;
                            rdfs:comment "The class that represents double tap - two short taps on the screen"@en ,
@@ -418,7 +418,7 @@
                            rdfs:label "DoubleTapTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#Event
+###  https://w3id.org/usability#Event
 :Event rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Restriction ;
                          owl:onProperty :isContainedIn ;
@@ -435,7 +435,7 @@
                   "Событие"@ru .
 
 
-###  http://w3id.org/usability#HoldTapTouchActionEvent
+###  https://w3id.org/usability#HoldTapTouchActionEvent
 :HoldTapTouchActionEvent rdf:type owl:Class ;
                          rdfs:subClassOf :TapTouchActionEvent ;
                          rdfs:comment "The class that represents touch-and-hold action - continuous touch with a single finger"@en ,
@@ -443,7 +443,7 @@
                          rdfs:label "HoldTapTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#Image
+###  https://w3id.org/usability#Image
 :Image rdf:type owl:Class ;
        rdfs:subClassOf [ rdf:type owl:Restriction ;
                          owl:onProperty :hasBinaryData ;
@@ -495,7 +495,7 @@
                   "Изображение"@ru .
 
 
-###  http://w3id.org/usability#KeyboardActionEvent
+###  https://w3id.org/usability#KeyboardActionEvent
 :KeyboardActionEvent rdf:type owl:Class ;
                      rdfs:subClassOf :ActionEvent ;
                      rdfs:comment "The class that represents actions related to user's manipulations with a keyboard"@en ,
@@ -504,7 +504,7 @@
                                 "КлавиатураДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#LongTapTouchActionEvent
+###  https://w3id.org/usability#LongTapTouchActionEvent
 :LongTapTouchActionEvent rdf:type owl:Class ;
                          rdfs:subClassOf :TapTouchActionEvent ;
                          rdfs:comment "The class that represents touch - a touch that is slightly longer then tap"@en ,
@@ -512,7 +512,7 @@
                          rdfs:label "LongTapTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#MouseActionEvent
+###  https://w3id.org/usability#MouseActionEvent
 :MouseActionEvent rdf:type owl:Class ;
                   rdfs:subClassOf :ActionEvent ;
                   rdfs:comment "The class that represents actions related to user's manipulations with a mouse"@en ,
@@ -521,7 +521,7 @@
                              "МышьДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#MoveMouseActionEvent
+###  https://w3id.org/usability#MoveMouseActionEvent
 :MoveMouseActionEvent rdf:type owl:Class ;
                       rdfs:subClassOf :MouseActionEvent ,
                                       [ rdf:type owl:Restriction ;
@@ -550,7 +550,7 @@
                                  "ДвижениеМышьДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#PinchTouchActionEvent
+###  https://w3id.org/usability#PinchTouchActionEvent
 :PinchTouchActionEvent rdf:type owl:Class ;
                        rdfs:subClassOf :TouchActionEvent ;
                        rdfs:comment "The class that represents pinch - a contractive movement with two fingers on the screen to scale down the image."@en ,
@@ -558,7 +558,7 @@
                        rdfs:label "PinchTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#Region
+###  https://w3id.org/usability#Region
 :Region rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
                           owl:onProperty :contains ;
@@ -620,7 +620,7 @@
                    "Регион"@ru .
 
 
-###  http://w3id.org/usability#ScrollMouseActionEvent
+###  https://w3id.org/usability#ScrollMouseActionEvent
 :ScrollMouseActionEvent rdf:type owl:Class ;
                         rdfs:subClassOf :MouseActionEvent ;
                         rdfs:comment "The class that represents a mouse wheel scroll"@en ,
@@ -629,7 +629,7 @@
                                    "ПрокруткаМышьДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#Session
+###  https://w3id.org/usability#Session
 :Session rdf:type owl:Class ;
          rdfs:subClassOf [ rdf:type owl:Restriction ;
                            owl:onProperty :contains ;
@@ -671,7 +671,7 @@
                     "Сессия"@ru .
 
 
-###  http://w3id.org/usability#SingleClickMouseEvent
+###  https://w3id.org/usability#SingleClickMouseEvent
 :SingleClickMouseEvent rdf:type owl:Class ;
                        rdfs:subClassOf :ClickMouseActionEvent ;
                        rdfs:comment "The class that represents a single mouse click"@en ,
@@ -680,7 +680,7 @@
                                   "ОдинарныйКликМышьДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#SingleTapTouchActionEvent
+###  https://w3id.org/usability#SingleTapTouchActionEvent
 :SingleTapTouchActionEvent rdf:type owl:Class ;
                            rdfs:subClassOf :TapTouchActionEvent ;
                            rdfs:comment "The class that represents tap action - single short touch with one finger"@en ,
@@ -688,7 +688,7 @@
                            rdfs:label "SingleTapTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#StretchTouchActionEvent
+###  https://w3id.org/usability#StretchTouchActionEvent
 :StretchTouchActionEvent rdf:type owl:Class ;
                          rdfs:subClassOf :TouchActionEvent ;
                          rdfs:comment "The class that represents stretch (pinch it open) - tensile movement with two fingers on the screen to enlarge the image."@en ,
@@ -696,7 +696,7 @@
                          rdfs:label "StretchTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#SwipeTouchActionEvent
+###  https://w3id.org/usability#SwipeTouchActionEvent
 :SwipeTouchActionEvent rdf:type owl:Class ;
                        rdfs:subClassOf :TouchActionEvent ,
                                        [ rdf:type owl:Restriction ;
@@ -724,7 +724,7 @@
                        rdfs:label "SwipeTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#TapTouchActionEvent
+###  https://w3id.org/usability#TapTouchActionEvent
 :TapTouchActionEvent rdf:type owl:Class ;
                      rdfs:subClassOf :TouchActionEvent ,
                                      [ rdf:type owl:Restriction ;
@@ -752,7 +752,7 @@
                      rdfs:label "TapTouchActionEvent"@en .
 
 
-###  http://w3id.org/usability#TouchActionEvent
+###  https://w3id.org/usability#TouchActionEvent
 :TouchActionEvent rdf:type owl:Class ;
                   rdfs:subClassOf :ActionEvent ;
                   rdfs:comment "The class that represents events related to user interations with touchscreen, like smartphone or tablet PC"@en ,
@@ -761,7 +761,7 @@
                              "КасаниеДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#TypeKeyboardActionEvent
+###  https://w3id.org/usability#TypeKeyboardActionEvent
 :TypeKeyboardActionEvent rdf:type owl:Class ;
                          rdfs:subClassOf :KeyboardActionEvent ;
                          rdfs:comment "The class that represents clicks on a keyboard"@en ,
@@ -770,7 +770,7 @@
                                     "ВводКлавиатураДействиеСобытие"@ru .
 
 
-###  http://w3id.org/usability#User
+###  https://w3id.org/usability#User
 :User rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
                         owl:onProperty :performed ;
@@ -802,7 +802,7 @@
                  "Пользователь"@ru .
 
 
-###  http://w3id.org/usability#Variation
+###  https://w3id.org/usability#Variation
 :Variation rdf:type owl:Class ;
            rdfs:subClassOf [ rdf:type owl:Restriction ;
                              owl:onProperty :contains ;
@@ -877,13 +877,13 @@
 #    Individuals
 #################################################################
 
-###  http://w3id.org/usability#CommandA
+###  https://w3id.org/usability#CommandA
 :CommandA rdf:type owl:NamedIndividual ,
                    :Command ;
           :hasName "CommandA" .
 
 
-###  http://w3id.org/usability#CommandB
+###  https://w3id.org/usability#CommandB
 :CommandB rdf:type owl:NamedIndividual ,
                    :Command ;
           :isContainedIn :RegionVariation211 ;
@@ -891,7 +891,7 @@
           :hasName "CommandB" .
 
 
-###  http://w3id.org/usability#CommandEvent1113
+###  https://w3id.org/usability#CommandEvent1113
 :CommandEvent1113 rdf:type owl:NamedIndividual ,
                            :CommandEvent ;
                   :contains :CommandA ;
@@ -899,7 +899,7 @@
                   :wasAssociatedWith :CommandA .
 
 
-###  http://w3id.org/usability#CommandEvent1114
+###  https://w3id.org/usability#CommandEvent1114
 :CommandEvent1114 rdf:type owl:NamedIndividual ,
                            :CommandEvent ;
                   :contains :CommandA ;
@@ -907,63 +907,63 @@
                   :wasAssociatedWith :CommandA .
 
 
-###  http://w3id.org/usability#CommandEvent2112
+###  https://w3id.org/usability#CommandEvent2112
 :CommandEvent2112 rdf:type owl:NamedIndividual ,
                            :CommandEvent ;
                   :contains :CommandB ;
                   :wasAssociatedWith :CommandB .
 
 
-###  http://w3id.org/usability#Device1
+###  https://w3id.org/usability#Device1
 :Device1 rdf:type owl:NamedIndividual ,
                   :Device ;
          :wasUsedIn :Session1 ,
                     :Session2 .
 
 
-###  http://w3id.org/usability#Event1111
+###  https://w3id.org/usability#Event1111
 :Event1111 rdf:type owl:NamedIndividual ,
                     :Event ;
            :hasInRegionX "27.0"^^xsd:double ;
            :hasInRegionY "625.0"^^xsd:double .
 
 
-###  http://w3id.org/usability#Event1112
+###  https://w3id.org/usability#Event1112
 :Event1112 rdf:type owl:NamedIndividual ,
                     :Event .
 
 
-###  http://w3id.org/usability#Event1121
+###  https://w3id.org/usability#Event1121
 :Event1121 rdf:type owl:NamedIndividual ,
                     :Event .
 
 
-###  http://w3id.org/usability#Event1122
+###  https://w3id.org/usability#Event1122
 :Event1122 rdf:type owl:NamedIndividual ,
                     :Event .
 
 
-###  http://w3id.org/usability#Event2111
+###  https://w3id.org/usability#Event2111
 :Event2111 rdf:type owl:NamedIndividual ,
                     :Event .
 
 
-###  http://w3id.org/usability#Image111
+###  https://w3id.org/usability#Image111
 :Image111 rdf:type owl:NamedIndividual ,
                    :Image .
 
 
-###  http://w3id.org/usability#Image112
+###  https://w3id.org/usability#Image112
 :Image112 rdf:type owl:NamedIndividual ,
                    :Image .
 
 
-###  http://w3id.org/usability#Image211
+###  https://w3id.org/usability#Image211
 :Image211 rdf:type owl:NamedIndividual ,
                    :Image .
 
 
-###  http://w3id.org/usability#Region11
+###  https://w3id.org/usability#Region11
 :Region11 rdf:type owl:NamedIndividual ,
                    :Region ;
           :contains :RegionVariation111 ,
@@ -971,14 +971,14 @@
           :hasName "Region11" .
 
 
-###  http://w3id.org/usability#Region21
+###  https://w3id.org/usability#Region21
 :Region21 rdf:type owl:NamedIndividual ,
                    :Region ;
           :contains :RegionVariation211 ;
           :hasName "Region21" .
 
 
-###  http://w3id.org/usability#RegionVariation111
+###  https://w3id.org/usability#RegionVariation111
 :RegionVariation111 rdf:type owl:NamedIndividual ,
                              :Variation ;
                     :contains :CommandEvent1113 ,
@@ -989,39 +989,39 @@
                     :hasName "RegionVariation111" .
 
 
-###  http://w3id.org/usability#RegionVariation112
+###  https://w3id.org/usability#RegionVariation112
 :RegionVariation112 rdf:type owl:NamedIndividual ,
                              :Variation ;
                     :hasImage :Image112 .
 
 
-###  http://w3id.org/usability#RegionVariation211
+###  https://w3id.org/usability#RegionVariation211
 :RegionVariation211 rdf:type owl:NamedIndividual ,
                              :Variation ;
                     :contains :CommandEvent2112 ;
                     :hasImage :Image211 .
 
 
-###  http://w3id.org/usability#Session1
+###  https://w3id.org/usability#Session1
 :Session1 rdf:type owl:NamedIndividual ,
                    :Session ;
           :contains :Region11 .
 
 
-###  http://w3id.org/usability#Session2
+###  https://w3id.org/usability#Session2
 :Session2 rdf:type owl:NamedIndividual ,
                    :Session ;
           :contains :Region21 .
 
 
-###  http://w3id.org/usability#User1
+###  https://w3id.org/usability#User1
 :User1 rdf:type owl:NamedIndividual ,
                 :User ;
        :performed :Session1 ;
        :hasName "Ivan Ivanov" .
 
 
-###  http://w3id.org/usability#User2
+###  https://w3id.org/usability#User2
 :User2 rdf:type owl:NamedIndividual ,
                 :User ;
        :performed :Session2 ;

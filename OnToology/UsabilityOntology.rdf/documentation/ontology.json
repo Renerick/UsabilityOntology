@@ -42,7 +42,7 @@
     "@id" : "_:genid2147483929"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionY"
+    "@id" : "https://w3id.org/usability#hasInRegionY"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -55,7 +55,7 @@
     "@id" : "_:genid2147483930"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionX"
+    "@id" : "https://w3id.org/usability#hasInRegionX"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -83,7 +83,7 @@
     "@id" : "_:genid2147483931"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionY"
+    "@id" : "https://w3id.org/usability#hasInRegionY"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -93,10 +93,10 @@
   "@id" : "_:genid109",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#performed"
+    "@id" : "https://w3id.org/usability#performed"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ]
 }, {
   "@id" : "_:genid110",
@@ -109,7 +109,7 @@
     "@id" : "_:genid2147483932"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasName"
+    "@id" : "https://w3id.org/usability#hasName"
   } ]
 }, {
   "@id" : "_:genid112",
@@ -137,34 +137,34 @@
     "@id" : "_:genid2147483933"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasUid"
+    "@id" : "https://w3id.org/usability#hasUid"
   } ]
 }, {
   "@id" : "_:genid115",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#contains"
+    "@id" : "https://w3id.org/usability#contains"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Event"
+    "@id" : "https://w3id.org/usability#Event"
   } ]
 }, {
   "@id" : "_:genid116",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#isContainedIn"
+    "@id" : "https://w3id.org/usability#isContainedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Region"
+    "@id" : "https://w3id.org/usability#Region"
   } ]
 }, {
   "@id" : "_:genid117",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://w3id.org/usability#Image"
+    "@id" : "https://w3id.org/usability#Image"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasImage"
+    "@id" : "https://w3id.org/usability#hasImage"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -181,7 +181,7 @@
     "@id" : "_:genid2147483934"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMaxHeight"
+    "@id" : "https://w3id.org/usability#hasMaxHeight"
   } ]
 }, {
   "@id" : "_:genid12",
@@ -215,7 +215,7 @@
     "@id" : "_:genid2147483935"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMaxWidth"
+    "@id" : "https://w3id.org/usability#hasMaxWidth"
   } ]
 }, {
   "@id" : "_:genid123",
@@ -228,7 +228,7 @@
     "@id" : "_:genid2147483936"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMinHeight"
+    "@id" : "https://w3id.org/usability#hasMinHeight"
   } ]
 }, {
   "@id" : "_:genid124",
@@ -241,7 +241,7 @@
     "@id" : "_:genid2147483937"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMinWidth"
+    "@id" : "https://w3id.org/usability#hasMinWidth"
   } ]
 }, {
   "@id" : "_:genid125",
@@ -254,7 +254,7 @@
     "@id" : "_:genid126"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasName"
+    "@id" : "https://w3id.org/usability#hasName"
   } ]
 }, {
   "@id" : "_:genid126",
@@ -666,7 +666,7 @@
     "@id" : "_:genid2147483914"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionX"
+    "@id" : "https://w3id.org/usability#hasInRegionX"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -694,7 +694,7 @@
     "@id" : "_:genid2147483915"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionY"
+    "@id" : "https://w3id.org/usability#hasInRegionY"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -704,19 +704,19 @@
   "@id" : "_:genid45",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#isContainedIn"
+    "@id" : "https://w3id.org/usability#isContainedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#CommandEvent"
+    "@id" : "https://w3id.org/usability#CommandEvent"
   } ]
 }, {
   "@id" : "_:genid46",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#wasInvokedIn"
+    "@id" : "https://w3id.org/usability#wasInvokedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#CommandEvent"
+    "@id" : "https://w3id.org/usability#CommandEvent"
   } ]
 }, {
   "@id" : "_:genid47",
@@ -725,7 +725,7 @@
     "@id" : "_:genid48"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasName"
+    "@id" : "https://w3id.org/usability#hasName"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -752,19 +752,19 @@
   "@id" : "_:genid51",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#contains"
+    "@id" : "https://w3id.org/usability#contains"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Command"
+    "@id" : "https://w3id.org/usability#Command"
   } ]
 }, {
   "@id" : "_:genid52",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://w3id.org/usability#Command"
+    "@id" : "https://w3id.org/usability#Command"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#wasAssociatedWith"
+    "@id" : "https://w3id.org/usability#wasAssociatedWith"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -774,10 +774,10 @@
   "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#wasUsedIn"
+    "@id" : "https://w3id.org/usability#wasUsedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ]
 }, {
   "@id" : "_:genid54",
@@ -790,7 +790,7 @@
     "@id" : "_:genid2147483916"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasName"
+    "@id" : "https://w3id.org/usability#hasName"
   } ]
 }, {
   "@id" : "_:genid56",
@@ -818,16 +818,16 @@
     "@id" : "_:genid2147483917"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasUid"
+    "@id" : "https://w3id.org/usability#hasUid"
   } ]
 }, {
   "@id" : "_:genid59",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#isContainedIn"
+    "@id" : "https://w3id.org/usability#isContainedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ]
 }, {
   "@id" : "_:genid6",
@@ -842,7 +842,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasDateTime"
+    "@id" : "https://w3id.org/usability#hasDateTime"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -852,7 +852,7 @@
   "@id" : "_:genid61",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasBinaryData"
+    "@id" : "https://w3id.org/usability#hasBinaryData"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#base64Binary"
@@ -864,7 +864,7 @@
     "@id" : "_:genid2147483920"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasDpiX"
+    "@id" : "https://w3id.org/usability#hasDpiX"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -892,7 +892,7 @@
     "@id" : "_:genid2147483921"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasDpiY"
+    "@id" : "https://w3id.org/usability#hasDpiY"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -905,7 +905,7 @@
     "@id" : "_:genid2147483918"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasHeight"
+    "@id" : "https://w3id.org/usability#hasHeight"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -944,7 +944,7 @@
     "@id" : "_:genid2147483919"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasWidth"
+    "@id" : "https://w3id.org/usability#hasWidth"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -957,7 +957,7 @@
     "@id" : "_:genid2147483922"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionX"
+    "@id" : "https://w3id.org/usability#hasInRegionX"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -985,7 +985,7 @@
     "@id" : "_:genid2147483923"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionY"
+    "@id" : "https://w3id.org/usability#hasInRegionY"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -995,25 +995,25 @@
   "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#contains"
+    "@id" : "https://w3id.org/usability#contains"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ]
 }, {
   "@id" : "_:genid78",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#isContainedIn"
+    "@id" : "https://w3id.org/usability#isContainedIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ]
 }, {
   "@id" : "_:genid79",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMaxHeight"
+    "@id" : "https://w3id.org/usability#hasMaxHeight"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid2147483924"
@@ -1037,7 +1037,7 @@
   "@id" : "_:genid83",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMaxWidth"
+    "@id" : "https://w3id.org/usability#hasMaxWidth"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid2147483925"
@@ -1046,7 +1046,7 @@
   "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMinHeight"
+    "@id" : "https://w3id.org/usability#hasMinHeight"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid2147483926"
@@ -1055,7 +1055,7 @@
   "@id" : "_:genid85",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasMinWidth"
+    "@id" : "https://w3id.org/usability#hasMinWidth"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "_:genid2147483927"
@@ -1067,7 +1067,7 @@
     "@id" : "_:genid87"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasName"
+    "@id" : "https://w3id.org/usability#hasName"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1100,19 +1100,19 @@
   "@id" : "_:genid90",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#contains"
+    "@id" : "https://w3id.org/usability#contains"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://w3id.org/usability#Region"
+    "@id" : "https://w3id.org/usability#Region"
   } ]
 }, {
   "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://w3id.org/usability#User"
+    "@id" : "https://w3id.org/usability#User"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#wasPerformedBy"
+    "@id" : "https://w3id.org/usability#wasPerformedBy"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1122,10 +1122,10 @@
   "@id" : "_:genid92",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://w3id.org/usability#Device"
+    "@id" : "https://w3id.org/usability#Device"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#wasPerformedOn"
+    "@id" : "https://w3id.org/usability#wasPerformedOn"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1138,7 +1138,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasEndDateTime"
+    "@id" : "https://w3id.org/usability#hasEndDateTime"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1151,7 +1151,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasStartDateTime"
+    "@id" : "https://w3id.org/usability#hasStartDateTime"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -1168,7 +1168,7 @@
     "@id" : "_:genid96"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasUid"
+    "@id" : "https://w3id.org/usability#hasUid"
   } ]
 }, {
   "@id" : "_:genid96",
@@ -1194,14 +1194,14 @@
     "@id" : "_:genid2147483928"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://w3id.org/usability#hasInRegionX"
+    "@id" : "https://w3id.org/usability#hasInRegionX"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability",
+  "@id" : "https://w3id.org/usability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/creator" : [ {
     "@value" : "Danilov Nikita"
@@ -1224,7 +1224,7 @@
     "@value" : "Удобство использования"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#ActionEvent",
+  "@id" : "https://w3id.org/usability#ActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1241,10 +1241,10 @@
     "@value" : "ДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#Event"
+    "@id" : "https://w3id.org/usability#Event"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#ClickMouseActionEvent",
+  "@id" : "https://w3id.org/usability#ClickMouseActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1261,14 +1261,14 @@
     "@value" : "КликМышьДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#MouseActionEvent"
+    "@id" : "https://w3id.org/usability#MouseActionEvent"
   }, {
     "@id" : "_:genid40"
   }, {
     "@id" : "_:genid44"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Command",
+  "@id" : "https://w3id.org/usability#Command",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "ru",
@@ -1292,25 +1292,25 @@
     "@id" : "_:genid47"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#CommandA",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Command" ],
-  "http://w3id.org/usability#hasName" : [ {
+  "@id" : "https://w3id.org/usability#CommandA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Command" ],
+  "https://w3id.org/usability#hasName" : [ {
     "@value" : "CommandA"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#CommandB",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Command" ],
-  "http://w3id.org/usability#hasName" : [ {
+  "@id" : "https://w3id.org/usability#CommandB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Command" ],
+  "https://w3id.org/usability#hasName" : [ {
     "@value" : "CommandB"
   } ],
-  "http://w3id.org/usability#isContainedIn" : [ {
-    "@id" : "http://w3id.org/usability#RegionVariation211"
+  "https://w3id.org/usability#isContainedIn" : [ {
+    "@id" : "https://w3id.org/usability#RegionVariation211"
   } ],
-  "http://w3id.org/usability#wasInvokedIn" : [ {
-    "@id" : "http://w3id.org/usability#RegionVariation211"
+  "https://w3id.org/usability#wasInvokedIn" : [ {
+    "@id" : "https://w3id.org/usability#RegionVariation211"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#CommandEvent",
+  "@id" : "https://w3id.org/usability#CommandEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1327,47 +1327,47 @@
     "@value" : "КомандаСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#Event"
+    "@id" : "https://w3id.org/usability#Event"
   }, {
     "@id" : "_:genid51"
   }, {
     "@id" : "_:genid52"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#CommandEvent1113",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#CommandEvent" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#CommandA"
+  "@id" : "https://w3id.org/usability#CommandEvent1113",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#CommandEvent" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#CommandA"
   } ],
-  "http://w3id.org/usability#isContainedIn" : [ {
-    "@id" : "http://w3id.org/usability#RegionVariation111"
+  "https://w3id.org/usability#isContainedIn" : [ {
+    "@id" : "https://w3id.org/usability#RegionVariation111"
   } ],
-  "http://w3id.org/usability#wasAssociatedWith" : [ {
-    "@id" : "http://w3id.org/usability#CommandA"
+  "https://w3id.org/usability#wasAssociatedWith" : [ {
+    "@id" : "https://w3id.org/usability#CommandA"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#CommandEvent1114",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#CommandEvent" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#CommandA"
+  "@id" : "https://w3id.org/usability#CommandEvent1114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#CommandEvent" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#CommandA"
   } ],
-  "http://w3id.org/usability#isContainedIn" : [ {
-    "@id" : "http://w3id.org/usability#RegionVariation111"
+  "https://w3id.org/usability#isContainedIn" : [ {
+    "@id" : "https://w3id.org/usability#RegionVariation111"
   } ],
-  "http://w3id.org/usability#wasAssociatedWith" : [ {
-    "@id" : "http://w3id.org/usability#CommandA"
+  "https://w3id.org/usability#wasAssociatedWith" : [ {
+    "@id" : "https://w3id.org/usability#CommandA"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#CommandEvent2112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#CommandEvent" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#CommandB"
+  "@id" : "https://w3id.org/usability#CommandEvent2112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#CommandEvent" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#CommandB"
   } ],
-  "http://w3id.org/usability#wasAssociatedWith" : [ {
-    "@id" : "http://w3id.org/usability#CommandB"
+  "https://w3id.org/usability#wasAssociatedWith" : [ {
+    "@id" : "https://w3id.org/usability#CommandB"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Device",
+  "@id" : "https://w3id.org/usability#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "ru",
@@ -1391,15 +1391,15 @@
     "@id" : "_:genid58"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Device1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Device" ],
-  "http://w3id.org/usability#wasUsedIn" : [ {
-    "@id" : "http://w3id.org/usability#Session1"
+  "@id" : "https://w3id.org/usability#Device1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Device" ],
+  "https://w3id.org/usability#wasUsedIn" : [ {
+    "@id" : "https://w3id.org/usability#Session1"
   }, {
-    "@id" : "http://w3id.org/usability#Session2"
+    "@id" : "https://w3id.org/usability#Session2"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#DoubleClickMouseEvent",
+  "@id" : "https://w3id.org/usability#DoubleClickMouseEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1416,10 +1416,10 @@
     "@value" : "ДвойнойКликМышьДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#ClickMouseActionEvent"
+    "@id" : "https://w3id.org/usability#ClickMouseActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#DoubleTapTouchActionEvent",
+  "@id" : "https://w3id.org/usability#DoubleTapTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1433,10 +1433,10 @@
     "@value" : "DoubleTapTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TapTouchActionEvent"
+    "@id" : "https://w3id.org/usability#TapTouchActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Event",
+  "@id" : "https://w3id.org/usability#Event",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1458,30 +1458,30 @@
     "@id" : "_:genid60"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Event1111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Event" ],
-  "http://w3id.org/usability#hasInRegionX" : [ {
+  "@id" : "https://w3id.org/usability#Event1111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Event" ],
+  "https://w3id.org/usability#hasInRegionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
     "@value" : "27.0"
   } ],
-  "http://w3id.org/usability#hasInRegionY" : [ {
+  "https://w3id.org/usability#hasInRegionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
     "@value" : "625.0"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Event1112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Event" ]
+  "@id" : "https://w3id.org/usability#Event1112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Event" ]
 }, {
-  "@id" : "http://w3id.org/usability#Event1121",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Event" ]
+  "@id" : "https://w3id.org/usability#Event1121",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Event" ]
 }, {
-  "@id" : "http://w3id.org/usability#Event1122",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Event" ]
+  "@id" : "https://w3id.org/usability#Event1122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Event" ]
 }, {
-  "@id" : "http://w3id.org/usability#Event2111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Event" ]
+  "@id" : "https://w3id.org/usability#Event2111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Event" ]
 }, {
-  "@id" : "http://w3id.org/usability#HoldTapTouchActionEvent",
+  "@id" : "https://w3id.org/usability#HoldTapTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1495,10 +1495,10 @@
     "@value" : "HoldTapTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TapTouchActionEvent"
+    "@id" : "https://w3id.org/usability#TapTouchActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Image",
+  "@id" : "https://w3id.org/usability#Image",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "ru",
@@ -1526,16 +1526,16 @@
     "@id" : "_:genid71"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Image111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Image" ]
+  "@id" : "https://w3id.org/usability#Image111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Image" ]
 }, {
-  "@id" : "http://w3id.org/usability#Image112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Image" ]
+  "@id" : "https://w3id.org/usability#Image112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Image" ]
 }, {
-  "@id" : "http://w3id.org/usability#Image211",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Image" ]
+  "@id" : "https://w3id.org/usability#Image211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Image" ]
 }, {
-  "@id" : "http://w3id.org/usability#KeyboardActionEvent",
+  "@id" : "https://w3id.org/usability#KeyboardActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1552,10 +1552,10 @@
     "@value" : "КлавиатураДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#ActionEvent"
+    "@id" : "https://w3id.org/usability#ActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#LongTapTouchActionEvent",
+  "@id" : "https://w3id.org/usability#LongTapTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1569,10 +1569,10 @@
     "@value" : "LongTapTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TapTouchActionEvent"
+    "@id" : "https://w3id.org/usability#TapTouchActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#MouseActionEvent",
+  "@id" : "https://w3id.org/usability#MouseActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1589,10 +1589,10 @@
     "@value" : "МышьДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#ActionEvent"
+    "@id" : "https://w3id.org/usability#ActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#MoveMouseActionEvent",
+  "@id" : "https://w3id.org/usability#MoveMouseActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1609,14 +1609,14 @@
     "@value" : "ДвижениеМышьДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#MouseActionEvent"
+    "@id" : "https://w3id.org/usability#MouseActionEvent"
   }, {
     "@id" : "_:genid72"
   }, {
     "@id" : "_:genid76"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#PinchTouchActionEvent",
+  "@id" : "https://w3id.org/usability#PinchTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1630,10 +1630,10 @@
     "@value" : "PinchTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TouchActionEvent"
+    "@id" : "https://w3id.org/usability#TouchActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Region",
+  "@id" : "https://w3id.org/usability#Region",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1665,60 +1665,60 @@
     "@id" : "_:genid86"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Region11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Region" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#RegionVariation111"
+  "@id" : "https://w3id.org/usability#Region11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Region" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#RegionVariation111"
   }, {
-    "@id" : "http://w3id.org/usability#RegionVariation112"
+    "@id" : "https://w3id.org/usability#RegionVariation112"
   } ],
-  "http://w3id.org/usability#hasName" : [ {
+  "https://w3id.org/usability#hasName" : [ {
     "@value" : "Region11"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Region21",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Region" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#RegionVariation211"
+  "@id" : "https://w3id.org/usability#Region21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Region" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#RegionVariation211"
   } ],
-  "http://w3id.org/usability#hasName" : [ {
+  "https://w3id.org/usability#hasName" : [ {
     "@value" : "Region21"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#RegionVariation111",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Variation" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#CommandEvent1113"
+  "@id" : "https://w3id.org/usability#RegionVariation111",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Variation" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#CommandEvent1113"
   }, {
-    "@id" : "http://w3id.org/usability#CommandEvent1114"
+    "@id" : "https://w3id.org/usability#CommandEvent1114"
   }, {
-    "@id" : "http://w3id.org/usability#Event1111"
+    "@id" : "https://w3id.org/usability#Event1111"
   }, {
-    "@id" : "http://w3id.org/usability#Event1112"
+    "@id" : "https://w3id.org/usability#Event1112"
   } ],
-  "http://w3id.org/usability#hasImage" : [ {
-    "@id" : "http://w3id.org/usability#Image111"
+  "https://w3id.org/usability#hasImage" : [ {
+    "@id" : "https://w3id.org/usability#Image111"
   } ],
-  "http://w3id.org/usability#hasName" : [ {
+  "https://w3id.org/usability#hasName" : [ {
     "@value" : "RegionVariation111"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#RegionVariation112",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Variation" ],
-  "http://w3id.org/usability#hasImage" : [ {
-    "@id" : "http://w3id.org/usability#Image112"
+  "@id" : "https://w3id.org/usability#RegionVariation112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Variation" ],
+  "https://w3id.org/usability#hasImage" : [ {
+    "@id" : "https://w3id.org/usability#Image112"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#RegionVariation211",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Variation" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#CommandEvent2112"
+  "@id" : "https://w3id.org/usability#RegionVariation211",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Variation" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#CommandEvent2112"
   } ],
-  "http://w3id.org/usability#hasImage" : [ {
-    "@id" : "http://w3id.org/usability#Image211"
+  "https://w3id.org/usability#hasImage" : [ {
+    "@id" : "https://w3id.org/usability#Image211"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#ScrollMouseActionEvent",
+  "@id" : "https://w3id.org/usability#ScrollMouseActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1735,10 +1735,10 @@
     "@value" : "ПрокруткаМышьДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#MouseActionEvent"
+    "@id" : "https://w3id.org/usability#MouseActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Session",
+  "@id" : "https://w3id.org/usability#Session",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1768,19 +1768,19 @@
     "@id" : "_:genid95"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Session1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Session" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#Region11"
+  "@id" : "https://w3id.org/usability#Session1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Session" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#Region11"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Session2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#Session" ],
-  "http://w3id.org/usability#contains" : [ {
-    "@id" : "http://w3id.org/usability#Region21"
+  "@id" : "https://w3id.org/usability#Session2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#Session" ],
+  "https://w3id.org/usability#contains" : [ {
+    "@id" : "https://w3id.org/usability#Region21"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#SingleClickMouseEvent",
+  "@id" : "https://w3id.org/usability#SingleClickMouseEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1797,10 +1797,10 @@
     "@value" : "ОдинарныйКликМышьДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#ClickMouseActionEvent"
+    "@id" : "https://w3id.org/usability#ClickMouseActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#SingleTapTouchActionEvent",
+  "@id" : "https://w3id.org/usability#SingleTapTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1814,10 +1814,10 @@
     "@value" : "SingleTapTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TapTouchActionEvent"
+    "@id" : "https://w3id.org/usability#TapTouchActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#StretchTouchActionEvent",
+  "@id" : "https://w3id.org/usability#StretchTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1831,10 +1831,10 @@
     "@value" : "StretchTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TouchActionEvent"
+    "@id" : "https://w3id.org/usability#TouchActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#SwipeTouchActionEvent",
+  "@id" : "https://w3id.org/usability#SwipeTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1848,14 +1848,14 @@
     "@value" : "SwipeTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TouchActionEvent"
+    "@id" : "https://w3id.org/usability#TouchActionEvent"
   }, {
     "@id" : "_:genid99"
   }, {
     "@id" : "_:genid103"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#TapTouchActionEvent",
+  "@id" : "https://w3id.org/usability#TapTouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1869,14 +1869,14 @@
     "@value" : "TapTouchActionEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#TouchActionEvent"
+    "@id" : "https://w3id.org/usability#TouchActionEvent"
   }, {
     "@id" : "_:genid104"
   }, {
     "@id" : "_:genid108"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#TouchActionEvent",
+  "@id" : "https://w3id.org/usability#TouchActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1893,10 +1893,10 @@
     "@value" : "КасаниеДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#ActionEvent"
+    "@id" : "https://w3id.org/usability#ActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#TypeKeyboardActionEvent",
+  "@id" : "https://w3id.org/usability#TypeKeyboardActionEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1913,10 +1913,10 @@
     "@value" : "ВводКлавиатураДействиеСобытие"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://w3id.org/usability#KeyboardActionEvent"
+    "@id" : "https://w3id.org/usability#KeyboardActionEvent"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#User",
+  "@id" : "https://w3id.org/usability#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1940,25 +1940,25 @@
     "@id" : "_:genid114"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#User1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#User" ],
-  "http://w3id.org/usability#hasName" : [ {
+  "@id" : "https://w3id.org/usability#User1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#User" ],
+  "https://w3id.org/usability#hasName" : [ {
     "@value" : "Ivan Ivanov"
   } ],
-  "http://w3id.org/usability#performed" : [ {
-    "@id" : "http://w3id.org/usability#Session1"
+  "https://w3id.org/usability#performed" : [ {
+    "@id" : "https://w3id.org/usability#Session1"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#User2",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/usability#User" ],
-  "http://w3id.org/usability#hasName" : [ {
+  "@id" : "https://w3id.org/usability#User2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://w3id.org/usability#User" ],
+  "https://w3id.org/usability#hasName" : [ {
     "@value" : "Petr Petrov"
   } ],
-  "http://w3id.org/usability#performed" : [ {
-    "@id" : "http://w3id.org/usability#Session2"
+  "https://w3id.org/usability#performed" : [ {
+    "@id" : "https://w3id.org/usability#Session2"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#Variation",
+  "@id" : "https://w3id.org/usability#Variation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1992,7 +1992,7 @@
     "@id" : "_:genid125"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#contains",
+  "@id" : "https://w3id.org/usability#contains",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2009,70 +2009,70 @@
     "@value" : "cодержит"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://w3id.org/usability#isContainedIn"
+    "@id" : "https://w3id.org/usability#isContainedIn"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasBinaryData",
+  "@id" : "https://w3id.org/usability#hasBinaryData",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#base64Binary"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasCommandName",
+  "@id" : "https://w3id.org/usability#hasCommandName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#CommandEvent"
+    "@id" : "https://w3id.org/usability#CommandEvent"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasDateTime",
+  "@id" : "https://w3id.org/usability#hasDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Event"
+    "@id" : "https://w3id.org/usability#Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasDpiX",
+  "@id" : "https://w3id.org/usability#hasDpiX",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Image"
+    "@id" : "https://w3id.org/usability#Image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid4"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasDpiY",
+  "@id" : "https://w3id.org/usability#hasDpiY",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Image"
+    "@id" : "https://w3id.org/usability#Image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasEndDateTime",
+  "@id" : "https://w3id.org/usability#hasEndDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasHeight",
+  "@id" : "https://w3id.org/usability#hasHeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Image"
+    "@id" : "https://w3id.org/usability#Image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid10"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasImage",
+  "@id" : "https://w3id.org/usability#hasImage",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2082,7 +2082,7 @@
     "@value" : "Свойство которое связывает вариацию региона с его изображением"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2092,91 +2092,91 @@
     "@value" : "имеетИзображение"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/usability#Image"
+    "@id" : "https://w3id.org/usability#Image"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://w3id.org/usability#wasImaged"
+    "@id" : "https://w3id.org/usability#wasImaged"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasInRegionX",
+  "@id" : "https://w3id.org/usability#hasInRegionX",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid13"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasInRegionY",
+  "@id" : "https://w3id.org/usability#hasInRegionY",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid16"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasMaxHeight",
+  "@id" : "https://w3id.org/usability#hasMaxHeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid19"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasMaxWidth",
+  "@id" : "https://w3id.org/usability#hasMaxWidth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid22"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasMinHeight",
+  "@id" : "https://w3id.org/usability#hasMinHeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid25"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasMinWidth",
+  "@id" : "https://w3id.org/usability#hasMinWidth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid28"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasName",
+  "@id" : "https://w3id.org/usability#hasName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid31"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasStartDateTime",
+  "@id" : "https://w3id.org/usability#hasStartDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasUid",
+  "@id" : "https://w3id.org/usability#hasUid",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid34"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#hasWidth",
+  "@id" : "https://w3id.org/usability#hasWidth",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Image"
+    "@id" : "https://w3id.org/usability#Image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid37"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#isContainedIn",
+  "@id" : "https://w3id.org/usability#isContainedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2193,7 +2193,7 @@
     "@value" : "содержитсяВ"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#performed",
+  "@id" : "https://w3id.org/usability#performed",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "ru",
@@ -2203,7 +2203,7 @@
     "@value" : "Связывает пользователя с сессией, которую он выполнил"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#User"
+    "@id" : "https://w3id.org/usability#User"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2213,13 +2213,13 @@
     "@value" : "выполнил"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://w3id.org/usability#wasPerformedBy"
+    "@id" : "https://w3id.org/usability#wasPerformedBy"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#wasAssociatedWith",
+  "@id" : "https://w3id.org/usability#wasAssociatedWith",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2236,10 +2236,10 @@
     "@value" : "связанаС"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://w3id.org/usability#wasInvokedIn"
+    "@id" : "https://w3id.org/usability#wasInvokedIn"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#wasImaged",
+  "@id" : "https://w3id.org/usability#wasImaged",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2249,7 +2249,7 @@
     "@value" : "Связывает изображение с соответствующей вариацией региона"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Image"
+    "@id" : "https://w3id.org/usability#Image"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2259,10 +2259,10 @@
     "@value" : "изображает"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/usability#Variation"
+    "@id" : "https://w3id.org/usability#Variation"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#wasInvokedIn",
+  "@id" : "https://w3id.org/usability#wasInvokedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2279,7 +2279,7 @@
     "@value" : "былоВызваноВ"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#wasPerformedBy",
+  "@id" : "https://w3id.org/usability#wasPerformedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2289,7 +2289,7 @@
     "@value" : "Связывает сессию с пользователем, который ее выполнял"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2299,10 +2299,10 @@
     "@value" : "былаВыполненаПользователем"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/usability#User"
+    "@id" : "https://w3id.org/usability#User"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#wasPerformedOn",
+  "@id" : "https://w3id.org/usability#wasPerformedOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2312,7 +2312,7 @@
     "@value" : "Связывает сессию с устройством, на котором она выполнялась"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2322,13 +2322,13 @@
     "@value" : "былаВыполненаНа"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/usability#Device"
+    "@id" : "https://w3id.org/usability#Device"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://w3id.org/usability#wasUsedIn"
+    "@id" : "https://w3id.org/usability#wasUsedIn"
   } ]
 }, {
-  "@id" : "http://w3id.org/usability#wasUsedIn",
+  "@id" : "https://w3id.org/usability#wasUsedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2338,7 +2338,7 @@
     "@value" : "Связывает устройство с сессиями, которые были на нем запущены"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/usability#Device"
+    "@id" : "https://w3id.org/usability#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2348,6 +2348,6 @@
     "@value" : "былоИспользованоВ"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://w3id.org/usability#Session"
+    "@id" : "https://w3id.org/usability#Session"
   } ]
 } ]
