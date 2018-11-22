@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:usability="http://w3id.org/usability#">
+     xmlns:usability="https://w3id.org/usability#">
     <owl:Ontology rdf:about="https://w3id.org/usability">
         <dc:creator>Danilov Nikita</dc:creator>
         <dc:description xml:lang="en">Ontology &apos;Usability&apos; created to describe and store information about interactions of user with a software user interface</dc:description>
