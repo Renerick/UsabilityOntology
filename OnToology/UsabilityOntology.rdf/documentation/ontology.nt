@@ -1,10 +1,10 @@
-<http://w3id.org/usability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/creator> "Danilov Nikita" .
-<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/description> "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"@en .
-<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/description> "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@ru .
-<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/publisher> "Denis Palashevskiy" .
-<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/title> "Usability"@en .
-<http://w3id.org/usability> <http://purl.org/dc/elements/1.1/title> "Удобство использования"@ru .
+<https://w3id.org/usability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/usability> <http://purl.org/dc/elements/1.1/creator> "Danilov Nikita" .
+<https://w3id.org/usability> <http://purl.org/dc/elements/1.1/description> "Ontology 'Usability' created to describe and store information about interactions of user with a software user interface"@en .
+<https://w3id.org/usability> <http://purl.org/dc/elements/1.1/description> "Онтология \"Удобство испльзования\" предназначена для фиксации данных о взаимодействии пользователя с программной системой посредством графического пользовательского интерфейса"@ru .
+<https://w3id.org/usability> <http://purl.org/dc/elements/1.1/publisher> "Denis Palashevskiy" .
+<https://w3id.org/usability> <http://purl.org/dc/elements/1.1/title> "Usability"@en .
+<https://w3id.org/usability> <http://purl.org/dc/elements/1.1/title> "Удобство использования"@ru .
 # 
 # 
 # #################################################################
@@ -14,94 +14,94 @@
 # #################################################################
 # 
 # 
-# http://w3id.org/usability#contains
-<http://w3id.org/usability#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#contains> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/usability#isContainedIn> .
-<http://w3id.org/usability#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<http://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "A transitive property which determines that some subject contains/stores some object inside of it. Inverse of isContainedIn"@en .
-<http://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Транзитивное свойство, которое определят, что некий объект содержит/хранит внутря себя какой-либо другой объект"@ru .
-<http://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
-<http://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#label> "cодержит"@ru .
+# https://w3id.org/usability#contains
+<https://w3id.org/usability#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#contains> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/usability#isContainedIn> .
+<https://w3id.org/usability#contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "A transitive property which determines that some subject contains/stores some object inside of it. Inverse of isContainedIn"@en .
+<https://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#comment> "Транзитивное свойство, которое определят, что некий объект содержит/хранит внутря себя какой-либо другой объект"@ru .
+<https://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains"@en .
+<https://w3id.org/usability#contains> <http://www.w3.org/2000/01/rdf-schema#label> "cодержит"@ru .
 # 
-# http://w3id.org/usability#hasImage
-<http://w3id.org/usability#hasImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#hasImage> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/usability#wasImaged> .
-<http://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/usability#Image> .
-<http://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#comment> "The property which associate some region variation with its image"@en .
-<http://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство которое связывает вариацию региона с его изображением"@ru .
-<http://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#label> "hasImage"@en .
-<http://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#label> "имеетИзображение"@ru .
+# https://w3id.org/usability#hasImage
+<https://w3id.org/usability#hasImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#hasImage> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/usability#wasImaged> .
+<https://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/usability#Image> .
+<https://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#comment> "The property which associate some region variation with its image"@en .
+<https://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство которое связывает вариацию региона с его изображением"@ru .
+<https://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#label> "hasImage"@en .
+<https://w3id.org/usability#hasImage> <http://www.w3.org/2000/01/rdf-schema#label> "имеетИзображение"@ru .
 # 
-# http://w3id.org/usability#isContainedIn
-<http://w3id.org/usability#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
-<http://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A transitive property which determines that some object is contained/stored/located inside of some subject. Inverse of contains"@en .
-<http://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Транзитивное свойство, которое определяет, что некоторый объект содержится/хранится/находится внутри какого-либо другого объекта"@ru .
-<http://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isContainedIn"@en .
-<http://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "содержитсяВ"@ru .
+# https://w3id.org/usability#isContainedIn
+<https://w3id.org/usability#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#isContainedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#TransitiveProperty> .
+<https://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A transitive property which determines that some object is contained/stored/located inside of some subject. Inverse of contains"@en .
+<https://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Транзитивное свойство, которое определяет, что некоторый объект содержится/хранится/находится внутри какого-либо другого объекта"@ru .
+<https://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "isContainedIn"@en .
+<https://w3id.org/usability#isContainedIn> <http://www.w3.org/2000/01/rdf-schema#label> "содержитсяВ"@ru .
 # 
-# http://w3id.org/usability#performed
-<http://w3id.org/usability#performed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#performed> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/usability#wasPerformedBy> .
-<http://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#User> .
-<http://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a user with a session that he performed"@ru .
-<http://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает пользователя с сессией, которую он выполнил"@ru .
-<http://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed"@en .
-<http://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#label> "выполнил"@ru .
+# https://w3id.org/usability#performed
+<https://w3id.org/usability#performed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#performed> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/usability#wasPerformedBy> .
+<https://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#User> .
+<https://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a user with a session that he performed"@ru .
+<https://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает пользователя с сессией, которую он выполнил"@ru .
+<https://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#label> "performed"@en .
+<https://w3id.org/usability#performed> <http://www.w3.org/2000/01/rdf-schema#label> "выполнил"@ru .
 # 
-# http://w3id.org/usability#wasAssociatedWith
-<http://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/usability#wasInvokedIn> .
-<http://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates command event with the specific command instance"@en .
-<http://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает командное событие с экземпляром команды"@ru .
-<http://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "wasAssociatedWith"@en .
-<http://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "связанаС"@ru .
+# https://w3id.org/usability#wasAssociatedWith
+<https://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/usability#wasInvokedIn> .
+<https://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates command event with the specific command instance"@en .
+<https://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает командное событие с экземпляром команды"@ru .
+<https://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "wasAssociatedWith"@en .
+<https://w3id.org/usability#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "связанаС"@ru .
 # 
-# http://w3id.org/usability#wasImaged
-<http://w3id.org/usability#wasImaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Image> .
-<http://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates an image with the corresponding region variation"@en .
-<http://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает изображение с соответствующей вариацией региона"@ru .
-<http://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#label> "wasImaged"@en .
-<http://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#label> "изображает"@ru .
+# https://w3id.org/usability#wasImaged
+<https://w3id.org/usability#wasImaged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Image> .
+<https://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates an image with the corresponding region variation"@en .
+<https://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает изображение с соответствующей вариацией региона"@ru .
+<https://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#label> "wasImaged"@en .
+<https://w3id.org/usability#wasImaged> <http://www.w3.org/2000/01/rdf-schema#label> "изображает"@ru .
 # 
-# http://w3id.org/usability#wasInvokedIn
-<http://w3id.org/usability#wasInvokedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates specific command with the event in which the command was called"@en .
-<http://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает команду с командным событием, в котором команда была вызвана"@ru .
-<http://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#label> "wasInvokedIn"@en .
-<http://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#label> "былоВызваноВ"@en .
+# https://w3id.org/usability#wasInvokedIn
+<https://w3id.org/usability#wasInvokedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates specific command with the event in which the command was called"@en .
+<https://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает команду с командным событием, в котором команда была вызвана"@ru .
+<https://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#label> "wasInvokedIn"@en .
+<https://w3id.org/usability#wasInvokedIn> <http://www.w3.org/2000/01/rdf-schema#label> "былоВызваноВ"@en .
 # 
-# http://w3id.org/usability#wasPerformedBy
-<http://w3id.org/usability#wasPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/usability#User> .
-<http://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a session with the user who performed it"@en .
-<http://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает сессию с пользователем, который ее выполнял"@ru .
-<http://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasPerformedBy"@en .
-<http://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "былаВыполненаПользователем"@ru .
+# https://w3id.org/usability#wasPerformedBy
+<https://w3id.org/usability#wasPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/usability#User> .
+<https://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a session with the user who performed it"@en .
+<https://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает сессию с пользователем, который ее выполнял"@ru .
+<https://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "wasPerformedBy"@en .
+<https://w3id.org/usability#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "былаВыполненаПользователем"@ru .
 # 
-# http://w3id.org/usability#wasPerformedOn
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2002/07/owl#inverseOf> <http://w3id.org/usability#wasUsedIn> .
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/usability#Device> .
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a session with the device on which the session was run"@en .
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает сессию с устройством, на котором она выполнялась"@ru .
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#label> "wasPerformedOn"@en .
-<http://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#label> "былаВыполненаНа"@ru .
+# https://w3id.org/usability#wasPerformedOn
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/usability#wasUsedIn> .
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/usability#Device> .
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a session with the device on which the session was run"@en .
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает сессию с устройством, на котором она выполнялась"@ru .
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#label> "wasPerformedOn"@en .
+<https://w3id.org/usability#wasPerformedOn> <http://www.w3.org/2000/01/rdf-schema#label> "былаВыполненаНа"@ru .
 # 
-# http://w3id.org/usability#wasUsedIn
-<http://w3id.org/usability#wasUsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Device> .
-<http://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a device with the sessions which were run on that device"@en .
-<http://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает устройство с сессиями, которые были на нем запущены"@ru .
-<http://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "wasUsedIn"@en .
-<http://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "былоИспользованоВ"@ru .
+# https://w3id.org/usability#wasUsedIn
+<https://w3id.org/usability#wasUsedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Device> .
+<https://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property that associates a device with the sessions which were run on that device"@en .
+<https://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "Связывает устройство с сессиями, которые были на нем запущены"@ru .
+<https://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "wasUsedIn"@en .
+<https://w3id.org/usability#wasUsedIn> <http://www.w3.org/2000/01/rdf-schema#label> "былоИспользованоВ"@ru .
 # 
 # 
 # 
@@ -112,14 +112,14 @@
 # #################################################################
 # 
 # 
-# http://w3id.org/usability#hasBinaryData
-<http://w3id.org/usability#hasBinaryData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasBinaryData> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#base64Binary> .
+# https://w3id.org/usability#hasBinaryData
+<https://w3id.org/usability#hasBinaryData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasBinaryData> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#base64Binary> .
 # 
-# http://w3id.org/usability#hasCommandName
-<http://w3id.org/usability#hasCommandName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasCommandName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#CommandEvent> .
-<http://w3id.org/usability#hasCommandName> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+# https://w3id.org/usability#hasCommandName
+<https://w3id.org/usability#hasCommandName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasCommandName> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#CommandEvent> .
+<https://w3id.org/usability#hasCommandName> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid2 .
@@ -128,15 +128,15 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
 _:genid3 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasDateTime
-<http://w3id.org/usability#hasDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Event> .
-<http://w3id.org/usability#hasDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+# https://w3id.org/usability#hasDateTime
+<https://w3id.org/usability#hasDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Event> .
+<https://w3id.org/usability#hasDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
 # 
-# http://w3id.org/usability#hasDpiX
-<http://w3id.org/usability#hasDpiX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasDpiX> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Image> .
-<http://w3id.org/usability#hasDpiX> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+# https://w3id.org/usability#hasDpiX
+<https://w3id.org/usability#hasDpiX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasDpiX> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Image> .
+<https://w3id.org/usability#hasDpiX> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid4 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
 _:genid4 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid5 .
@@ -145,10 +145,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid6 .
 _:genid6 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasDpiY
-<http://w3id.org/usability#hasDpiY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasDpiY> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Image> .
-<http://w3id.org/usability#hasDpiY> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
+# https://w3id.org/usability#hasDpiY
+<https://w3id.org/usability#hasDpiY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasDpiY> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Image> .
+<https://w3id.org/usability#hasDpiY> <http://www.w3.org/2000/01/rdf-schema#range> _:genid7 .
 _:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid7 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
 _:genid7 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid8 .
@@ -157,15 +157,15 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
 _:genid9 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasEndDateTime
-<http://w3id.org/usability#hasEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+# https://w3id.org/usability#hasEndDateTime
+<https://w3id.org/usability#hasEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
 # 
-# http://w3id.org/usability#hasHeight
-<http://w3id.org/usability#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Image> .
-<http://w3id.org/usability#hasHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
+# https://w3id.org/usability#hasHeight
+<https://w3id.org/usability#hasHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Image> .
+<https://w3id.org/usability#hasHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid10 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid10 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid11 .
@@ -174,9 +174,9 @@ _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
 _:genid12 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasInRegionX
-<http://w3id.org/usability#hasInRegionX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasInRegionX> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
+# https://w3id.org/usability#hasInRegionX
+<https://w3id.org/usability#hasInRegionX> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasInRegionX> <http://www.w3.org/2000/01/rdf-schema#range> _:genid13 .
 _:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid13 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid13 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid14 .
@@ -185,9 +185,9 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
 _:genid15 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasInRegionY
-<http://w3id.org/usability#hasInRegionY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasInRegionY> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
+# https://w3id.org/usability#hasInRegionY
+<https://w3id.org/usability#hasInRegionY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasInRegionY> <http://www.w3.org/2000/01/rdf-schema#range> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid16 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid16 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid17 .
@@ -196,10 +196,10 @@ _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
 _:genid18 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasMaxHeight
-<http://w3id.org/usability#hasMaxHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasMaxHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#hasMaxHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
+# https://w3id.org/usability#hasMaxHeight
+<https://w3id.org/usability#hasMaxHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasMaxHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#hasMaxHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid19 .
 _:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid19 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid19 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid20 .
@@ -208,10 +208,10 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
 _:genid21 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasMaxWidth
-<http://w3id.org/usability#hasMaxWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasMaxWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#hasMaxWidth> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
+# https://w3id.org/usability#hasMaxWidth
+<https://w3id.org/usability#hasMaxWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasMaxWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#hasMaxWidth> <http://www.w3.org/2000/01/rdf-schema#range> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid22 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid22 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid23 .
@@ -220,10 +220,10 @@ _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
 _:genid24 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasMinHeight
-<http://w3id.org/usability#hasMinHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasMinHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#hasMinHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
+# https://w3id.org/usability#hasMinHeight
+<https://w3id.org/usability#hasMinHeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasMinHeight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#hasMinHeight> <http://www.w3.org/2000/01/rdf-schema#range> _:genid25 .
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid25 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid25 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid26 .
@@ -232,10 +232,10 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
 _:genid27 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasMinWidth
-<http://w3id.org/usability#hasMinWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasMinWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#hasMinWidth> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .
+# https://w3id.org/usability#hasMinWidth
+<https://w3id.org/usability#hasMinWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasMinWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#hasMinWidth> <http://www.w3.org/2000/01/rdf-schema#range> _:genid28 .
 _:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid28 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid28 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid29 .
@@ -244,9 +244,9 @@ _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
 _:genid30 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasName
-<http://w3id.org/usability#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasName> <http://www.w3.org/2000/01/rdf-schema#range> _:genid31 .
+# https://w3id.org/usability#hasName
+<https://w3id.org/usability#hasName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasName> <http://www.w3.org/2000/01/rdf-schema#range> _:genid31 .
 _:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid31 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid31 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid32 .
@@ -255,14 +255,14 @@ _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
 _:genid33 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasStartDateTime
-<http://w3id.org/usability#hasStartDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasStartDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#hasStartDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+# https://w3id.org/usability#hasStartDateTime
+<https://w3id.org/usability#hasStartDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasStartDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#hasStartDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
 # 
-# http://w3id.org/usability#hasUid
-<http://w3id.org/usability#hasUid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasUid> <http://www.w3.org/2000/01/rdf-schema#range> _:genid34 .
+# https://w3id.org/usability#hasUid
+<https://w3id.org/usability#hasUid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasUid> <http://www.w3.org/2000/01/rdf-schema#range> _:genid34 .
 _:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid34 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid34 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid35 .
@@ -271,10 +271,10 @@ _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
 _:genid36 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 # 
-# http://w3id.org/usability#hasWidth
-<http://w3id.org/usability#hasWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://w3id.org/usability#hasWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://w3id.org/usability#Image> .
-<http://w3id.org/usability#hasWidth> <http://www.w3.org/2000/01/rdf-schema#range> _:genid37 .
+# https://w3id.org/usability#hasWidth
+<https://w3id.org/usability#hasWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/usability#hasWidth> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/usability#Image> .
+<https://w3id.org/usability#hasWidth> <http://www.w3.org/2000/01/rdf-schema#range> _:genid37 .
 _:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid37 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid37 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid38 .
@@ -292,20 +292,20 @@ _:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1
 # #################################################################
 # 
 # 
-# http://w3id.org/usability#ActionEvent
-<http://w3id.org/usability#ActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#Event> .
-<http://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The base class for events which are user actions related to user interation with the interface (clicks, mouse movements, etc.)"@en .
-<http://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Базовый класс, предназначенный для событий, которые представляют собой действия пользователя, относящиеся к взаимодействию пользователя с интерфейсом (клики, перемещения мыши и др.)"@ru .
-<http://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ActionEvent"@en .
-<http://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ДействиеСобытие"@ru .
+# https://w3id.org/usability#ActionEvent
+<https://w3id.org/usability#ActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#Event> .
+<https://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The base class for events which are user actions related to user interation with the interface (clicks, mouse movements, etc.)"@en .
+<https://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Базовый класс, предназначенный для событий, которые представляют собой действия пользователя, относящиеся к взаимодействию пользователя с интерфейсом (клики, перемещения мыши и др.)"@ru .
+<https://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ActionEvent"@en .
+<https://w3id.org/usability#ActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#ClickMouseActionEvent
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#MouseActionEvent> .
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
+# https://w3id.org/usability#ClickMouseActionEvent
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#MouseActionEvent> .
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid40 .
 _:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionX> .
+_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionX> .
 _:genid40 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid40 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483890 .
 _:genid2147483890 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -315,32 +315,32 @@ _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
 _:genid43 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid44 .
 _:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionY> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionY> .
 _:genid44 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid44 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483891 .
 _:genid2147483891 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483891 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483891 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid42 .
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents any mouse click"@en .
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Клик (click) — щелчок по кнопке мыши."@ru .
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClickMouseActionEvent"@en .
-<http://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КликМышьДействиеСобытие"@ru .
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents any mouse click"@en .
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Клик (click) — щелчок по кнопке мыши."@ru .
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ClickMouseActionEvent"@en .
+<https://w3id.org/usability#ClickMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КликМышьДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#Command
-<http://w3id.org/usability#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
+# https://w3id.org/usability#Command
+<https://w3id.org/usability#Command> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid45 .
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#isContainedIn> .
-_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#CommandEvent> .
-<http://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#isContainedIn> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#CommandEvent> .
+<https://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid46 .
 _:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#wasInvokedIn> .
-_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#CommandEvent> .
-<http://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#wasInvokedIn> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#CommandEvent> .
+<https://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid47 .
 _:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasName> .
+_:genid47 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasName> .
 _:genid47 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid47 <http://www.w3.org/2002/07/owl#onDataRange> _:genid48 .
 _:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -350,37 +350,37 @@ _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
 _:genid50 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#comment> "Базовый класс команды, вызываемой пользователем."@ru .
-<http://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#label> "Command"@en .
-<http://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#label> "The base class for the command called by user"@en .
-<http://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#label> "Команда"@ru .
+<https://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#comment> "Базовый класс команды, вызываемой пользователем."@ru .
+<https://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#label> "Command"@en .
+<https://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#label> "The base class for the command called by user"@en .
+<https://w3id.org/usability#Command> <http://www.w3.org/2000/01/rdf-schema#label> "Команда"@ru .
 # 
-# http://w3id.org/usability#CommandEvent
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#Event> .
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
+# https://w3id.org/usability#CommandEvent
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#Event> .
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid51 .
 _:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#contains> .
-_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Command> .
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
+_:genid51 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#contains> .
+_:genid51 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Command> .
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid52 .
 _:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#wasAssociatedWith> .
+_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#wasAssociatedWith> .
 _:genid52 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid52 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/usability#Command> .
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents events, related with the fact of calling a certain command (function) by the user"@en .
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события команд. Они служат для фиксации факта вызова определенной команды (функции) пользователем."@ru .
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#label> "CommandEvent"@en .
-<http://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КомандаСобытие"@ru .
+_:genid52 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/usability#Command> .
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents events, related with the fact of calling a certain command (function) by the user"@en .
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события команд. Они служат для фиксации факта вызова определенной команды (функции) пользователем."@ru .
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#label> "CommandEvent"@en .
+<https://w3id.org/usability#CommandEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КомандаСобытие"@ru .
 # 
-# http://w3id.org/usability#Device
-<http://w3id.org/usability#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
+# https://w3id.org/usability#Device
+<https://w3id.org/usability#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid53 .
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#wasUsedIn> .
-_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#wasUsedIn> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid54 .
 _:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasName> .
+_:genid54 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasName> .
 _:genid54 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid54 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483892 .
 _:genid2147483892 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -390,66 +390,66 @@ _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
 _:genid57 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
+<https://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid58 .
 _:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasUid> .
+_:genid58 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasUid> .
 _:genid58 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid58 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483893 .
 _:genid2147483893 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483893 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid2147483893 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid56 .
-<http://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Устройство, на котором выполнялись(ются) сессии."@ru .
-<http://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
-<http://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#label> "The device on which the sessions were performed."@en .
-<http://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Устройство"@ru .
+<https://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "Устройство, на котором выполнялись(ются) сессии."@ru .
+<https://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+<https://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#label> "The device on which the sessions were performed."@en .
+<https://w3id.org/usability#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Устройство"@ru .
 # 
-# http://w3id.org/usability#DoubleClickMouseEvent
-<http://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#ClickMouseActionEvent> .
-<http://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents a double mouse click"@en .
-<http://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши."@ru .
-<http://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "DoubleClickMouseEvent"@en .
-<http://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ДвойнойКликМышьДействиеСобытие"@ru .
+# https://w3id.org/usability#DoubleClickMouseEvent
+<https://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#ClickMouseActionEvent> .
+<https://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents a double mouse click"@en .
+<https://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Дабл-клик, двойной клик (double click) — два быстрых щелчка по кнопке мыши."@ru .
+<https://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "DoubleClickMouseEvent"@en .
+<https://w3id.org/usability#DoubleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ДвойнойКликМышьДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#DoubleTapTouchActionEvent
-<http://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TapTouchActionEvent> .
-<http://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents double tap - two short taps on the screen"@en .
-<http://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику."@ru .
-<http://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "DoubleTapTouchActionEvent"@en .
+# https://w3id.org/usability#DoubleTapTouchActionEvent
+<https://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TapTouchActionEvent> .
+<https://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents double tap - two short taps on the screen"@en .
+<https://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Дабл-тап, дабл-тэп (double tap) — два коротких нажатия пальцем, сродни дабл-клику."@ru .
+<https://w3id.org/usability#DoubleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "DoubleTapTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#Event
-<http://w3id.org/usability#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
+# https://w3id.org/usability#Event
+<https://w3id.org/usability#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid59 .
 _:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#isContainedIn> .
-_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
+_:genid59 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#isContainedIn> .
+_:genid59 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid60 .
 _:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasDateTime> .
+_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasDateTime> .
 _:genid60 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid60 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<http://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "The base class for all different kinds of event that may be occured while the user is interacting with the software"@en .
-<http://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Базовый класс для событий, которые могут происходить при взаимодействии пользователя с программной системой"@ru .
-<http://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
-<http://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Событие"@ru .
+<https://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "The base class for all different kinds of event that may be occured while the user is interacting with the software"@en .
+<https://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "Базовый класс для событий, которые могут происходить при взаимодействии пользователя с программной системой"@ru .
+<https://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<https://w3id.org/usability#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Событие"@ru .
 # 
-# http://w3id.org/usability#HoldTapTouchActionEvent
-<http://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TapTouchActionEvent> .
-<http://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents touch-and-hold action - continuous touch with a single finger"@en .
-<http://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Тач-энд-холд (touch and hold) — нажать и держать."@ru .
-<http://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "HoldTapTouchActionEvent"@en .
+# https://w3id.org/usability#HoldTapTouchActionEvent
+<https://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TapTouchActionEvent> .
+<https://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents touch-and-hold action - continuous touch with a single finger"@en .
+<https://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Тач-энд-холд (touch and hold) — нажать и держать."@ru .
+<https://w3id.org/usability#HoldTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "HoldTapTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#Image
-<http://w3id.org/usability#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
+# https://w3id.org/usability#Image
+<https://w3id.org/usability#Image> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid61 .
 _:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasBinaryData> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasBinaryData> .
 _:genid61 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#base64Binary> .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid62 .
 _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasDpiX> .
+_:genid62 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasDpiX> .
 _:genid62 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid62 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483896 .
 _:genid2147483896 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -459,17 +459,17 @@ _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
 _:genid65 <http://www.w3.org/2001/XMLSchema#minExclusive> "0"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid66 .
 _:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasDpiY> .
+_:genid66 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasDpiY> .
 _:genid66 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid66 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483897 .
 _:genid2147483897 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483897 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#int> .
 _:genid2147483897 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid64 .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid67 .
 _:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasHeight> .
+_:genid67 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasHeight> .
 _:genid67 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid67 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483894 .
 _:genid2147483894 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -479,48 +479,48 @@ _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid70 .
 _:genid70 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid71 .
 _:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasWidth> .
+_:genid71 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasWidth> .
 _:genid71 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid71 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483895 .
 _:genid2147483895 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483895 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483895 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid69 .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes an image of the region variation"@ru .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, описывающий изображение, хранящее внешний вид вариации региона"@ru .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
-<http://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Изображение"@ru .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes an image of the region variation"@ru .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, описывающий изображение, хранящее внешний вид вариации региона"@ru .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Image"@en .
+<https://w3id.org/usability#Image> <http://www.w3.org/2000/01/rdf-schema#label> "Изображение"@ru .
 # 
-# http://w3id.org/usability#KeyboardActionEvent
-<http://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#ActionEvent> .
-<http://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents actions related to user's manipulations with a keyboard"@en .
-<http://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает событий действий, связанных с манипуляцией пользователя с клавиатурой"@ru .
-<http://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "KeyboardActionEvent"@en .
-<http://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КлавиатураДействиеСобытие"@ru .
+# https://w3id.org/usability#KeyboardActionEvent
+<https://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#ActionEvent> .
+<https://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents actions related to user's manipulations with a keyboard"@en .
+<https://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает событий действий, связанных с манипуляцией пользователя с клавиатурой"@ru .
+<https://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "KeyboardActionEvent"@en .
+<https://w3id.org/usability#KeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КлавиатураДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#LongTapTouchActionEvent
-<http://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TapTouchActionEvent> .
-<http://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents touch - a touch that is slightly longer then tap"@en .
-<http://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Тач (touch) — нажатие длиннее, чем Тап."@ru .
-<http://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "LongTapTouchActionEvent"@en .
+# https://w3id.org/usability#LongTapTouchActionEvent
+<https://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TapTouchActionEvent> .
+<https://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents touch - a touch that is slightly longer then tap"@en .
+<https://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Тач (touch) — нажатие длиннее, чем Тап."@ru .
+<https://w3id.org/usability#LongTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "LongTapTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#MouseActionEvent
-<http://w3id.org/usability#MouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#ActionEvent> .
-<http://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents actions related to user's manipulations with a mouse"@en .
-<http://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события действий, связанных с манипуляцией пользователя с мышью"@ru .
-<http://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "MouseActionEvent"@en .
-<http://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "МышьДействиеСобытие"@ru .
+# https://w3id.org/usability#MouseActionEvent
+<https://w3id.org/usability#MouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#ActionEvent> .
+<https://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents actions related to user's manipulations with a mouse"@en .
+<https://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события действий, связанных с манипуляцией пользователя с мышью"@ru .
+<https://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "MouseActionEvent"@en .
+<https://w3id.org/usability#MouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "МышьДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#MoveMouseActionEvent
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#MouseActionEvent> .
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
+# https://w3id.org/usability#MoveMouseActionEvent
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#MouseActionEvent> .
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid72 .
 _:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionX> .
+_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionX> .
 _:genid72 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid72 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483898 .
 _:genid2147483898 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -530,39 +530,39 @@ _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid75 .
 _:genid75 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid76 .
 _:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionY> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionY> .
 _:genid76 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid76 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483899 .
 _:genid2147483899 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483899 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483899 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid74 .
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents movements of cursor. hasInRegionX and hasInRegionY properties store information about the new cursor coordinates after the movement"@en .
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который соответствует событию движения курсора мыши. Свойства hasInRegionX и hasInRegionY позволяют указать новые координаты курсора мыши после перемещения"@ru .
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "MoveMouseAcitonEvent"@en .
-<http://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ДвижениеМышьДействиеСобытие"@ru .
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents movements of cursor. hasInRegionX and hasInRegionY properties store information about the new cursor coordinates after the movement"@en .
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который соответствует событию движения курсора мыши. Свойства hasInRegionX и hasInRegionY позволяют указать новые координаты курсора мыши после перемещения"@ru .
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "MoveMouseAcitonEvent"@en .
+<https://w3id.org/usability#MoveMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ДвижениеМышьДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#PinchTouchActionEvent
-<http://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TouchActionEvent> .
-<http://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents pinch - a contractive movement with two fingers on the screen to scale down the image."@en .
-<http://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения."@ru .
-<http://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "PinchTouchActionEvent"@en .
+# https://w3id.org/usability#PinchTouchActionEvent
+<https://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TouchActionEvent> .
+<https://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents pinch - a contractive movement with two fingers on the screen to scale down the image."@en .
+<https://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Пинч (pinch) — сжимающее движение одновременно двумя пальцами по экрану для уменьшения изображения."@ru .
+<https://w3id.org/usability#PinchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "PinchTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#Region
-<http://w3id.org/usability#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
+# https://w3id.org/usability#Region
+<https://w3id.org/usability#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid77 .
 _:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#contains> .
-_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#contains> .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid78 .
 _:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#isContainedIn> .
-_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
+_:genid78 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#isContainedIn> .
+_:genid78 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid79 .
 _:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMaxHeight> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMaxHeight> .
 _:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2147483900 .
 _:genid2147483900 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483900 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
@@ -571,30 +571,30 @@ _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
 _:genid82 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid83 .
 _:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMaxWidth> .
+_:genid83 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMaxWidth> .
 _:genid83 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2147483901 .
 _:genid2147483901 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483901 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483901 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid81 .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid84 .
 _:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMinHeight> .
+_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMinHeight> .
 _:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2147483902 .
 _:genid2147483902 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483902 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483902 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid81 .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid85 .
 _:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMinWidth> .
+_:genid85 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMinWidth> .
 _:genid85 <http://www.w3.org/2002/07/owl#someValuesFrom> _:genid2147483903 .
 _:genid2147483903 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483903 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483903 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid81 .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid86 .
 _:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasName> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasName> .
 _:genid86 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid86 <http://www.w3.org/2002/07/owl#onDataRange> _:genid87 .
 _:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -604,48 +604,48 @@ _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid89 .
 _:genid89 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "A fragment of GUI, for example, the whole window, or a part of it"@en .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Область пользовательского интерфейса, например, окно целиком, либо его отдельная часть"@ru .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
-<http://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Регион"@ru .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "A fragment of GUI, for example, the whole window, or a part of it"@en .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Область пользовательского интерфейса, например, окно целиком, либо его отдельная часть"@ru .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region"@en .
+<https://w3id.org/usability#Region> <http://www.w3.org/2000/01/rdf-schema#label> "Регион"@ru .
 # 
-# http://w3id.org/usability#ScrollMouseActionEvent
-<http://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#MouseActionEvent> .
-<http://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents a mouse wheel scroll"@en .
-<http://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который соответствует событию прокрутки колесика мыши"@ru .
-<http://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ScrollMouseActionEvent"@en .
-<http://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ПрокруткаМышьДействиеСобытие"@ru .
+# https://w3id.org/usability#ScrollMouseActionEvent
+<https://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#MouseActionEvent> .
+<https://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents a mouse wheel scroll"@en .
+<https://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который соответствует событию прокрутки колесика мыши"@ru .
+<https://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ScrollMouseActionEvent"@en .
+<https://w3id.org/usability#ScrollMouseActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ПрокруткаМышьДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#Session
-<http://w3id.org/usability#Session> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
+# https://w3id.org/usability#Session
+<https://w3id.org/usability#Session> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid90 .
 _:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#contains> .
-_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Region> .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
+_:genid90 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#contains> .
+_:genid90 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Region> .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid91 .
 _:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#wasPerformedBy> .
+_:genid91 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#wasPerformedBy> .
 _:genid91 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid91 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/usability#User> .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
+_:genid91 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/usability#User> .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid92 .
 _:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#wasPerformedOn> .
+_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#wasPerformedOn> .
 _:genid92 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid92 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/usability#Device> .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
+_:genid92 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/usability#Device> .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid93 .
 _:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasEndDateTime> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasEndDateTime> .
 _:genid93 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid93 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid94 .
 _:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasStartDateTime> .
+_:genid94 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasStartDateTime> .
 _:genid94 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid94 <http://www.w3.org/2002/07/owl#onDataRange> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid95 .
 _:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasUid> .
+_:genid95 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasUid> .
 _:genid95 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid95 <http://www.w3.org/2002/07/owl#onDataRange> _:genid96 .
 _:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -655,39 +655,39 @@ _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1
 _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid98 .
 _:genid98 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#comment> "A period of time when a user interacts with the software"@en .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#comment> "Временной промежуток, в течение которого пользователь взаимодействует с программной системой"@ru .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#label> "Session"@en .
-<http://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#label> "Сессия"@ru .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#comment> "A period of time when a user interacts with the software"@en .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#comment> "Временной промежуток, в течение которого пользователь взаимодействует с программной системой"@ru .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#label> "Session"@en .
+<https://w3id.org/usability#Session> <http://www.w3.org/2000/01/rdf-schema#label> "Сессия"@ru .
 # 
-# http://w3id.org/usability#SingleClickMouseEvent
-<http://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#ClickMouseActionEvent> .
-<http://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents a single mouse click"@en .
-<http://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие."@ru .
-<http://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SingleClickMouseEvent"@en .
-<http://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ОдинарныйКликМышьДействиеСобытие"@ru .
+# https://w3id.org/usability#SingleClickMouseEvent
+<https://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#ClickMouseActionEvent> .
+<https://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents a single mouse click"@en .
+<https://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Клик (click) — одинарный щелчок по кнопке мыши, короткое нажатие."@ru .
+<https://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SingleClickMouseEvent"@en .
+<https://w3id.org/usability#SingleClickMouseEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ОдинарныйКликМышьДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#SingleTapTouchActionEvent
-<http://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TapTouchActionEvent> .
-<http://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents tap action - single short touch with one finger"@en .
-<http://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Тап, тэп (tap) — короткое нажатие пальцем, сродни клику."@ru .
-<http://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SingleTapTouchActionEvent"@en .
+# https://w3id.org/usability#SingleTapTouchActionEvent
+<https://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TapTouchActionEvent> .
+<https://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents tap action - single short touch with one finger"@en .
+<https://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Тап, тэп (tap) — короткое нажатие пальцем, сродни клику."@ru .
+<https://w3id.org/usability#SingleTapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SingleTapTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#StretchTouchActionEvent
-<http://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TouchActionEvent> .
-<http://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents stretch (pinch it open) - tensile movement with two fingers on the screen to enlarge the image."@en .
-<http://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения."@ru .
-<http://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "StretchTouchActionEvent"@en .
+# https://w3id.org/usability#StretchTouchActionEvent
+<https://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TouchActionEvent> .
+<https://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents stretch (pinch it open) - tensile movement with two fingers on the screen to enlarge the image."@en .
+<https://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Стретч (stretch: для Microsoft), Пинч-ит-опен (pinch it open: для Apple) — растягивающее движение одновременно двумя пальцами по экрану для увеличения изображения."@ru .
+<https://w3id.org/usability#StretchTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "StretchTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#SwipeTouchActionEvent
-<http://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TouchActionEvent> .
-<http://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
+# https://w3id.org/usability#SwipeTouchActionEvent
+<https://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TouchActionEvent> .
+<https://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid99 .
 _:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionX> .
+_:genid99 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionX> .
 _:genid99 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid99 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483904 .
 _:genid2147483904 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -697,24 +697,24 @@ _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid102 .
 _:genid102 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
+<https://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid103 .
 _:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionY> .
+_:genid103 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionY> .
 _:genid103 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid103 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483905 .
 _:genid2147483905 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483905 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483905 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid101 .
-<http://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class the represents swipe (slide) - a continuous movement of the finger across the screen"@en .
-<http://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану."@ru .
-<http://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SwipeTouchActionEvent"@en .
+<https://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class the represents swipe (slide) - a continuous movement of the finger across the screen"@en .
+<https://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Свайп (swipe), Слайд (slide) — продолжительное скольжение пальцем по экрану."@ru .
+<https://w3id.org/usability#SwipeTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "SwipeTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#TapTouchActionEvent
-<http://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#TouchActionEvent> .
-<http://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
+# https://w3id.org/usability#TapTouchActionEvent
+<https://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#TouchActionEvent> .
+<https://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid104 .
 _:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionX> .
+_:genid104 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionX> .
 _:genid104 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid104 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483906 .
 _:genid2147483906 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -724,43 +724,43 @@ _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid107 .
 _:genid107 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
+<https://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid108 .
 _:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasInRegionY> .
+_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasInRegionY> .
 _:genid108 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid108 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483907 .
 _:genid2147483907 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483907 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483907 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid106 .
-<http://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents differend kinds events related to user's tap on the touch screen"@en .
-<http://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, предназначенный для описания различных видов тапов - прикосновений пользователя к экрану одним пальцем без движения"@ru .
-<http://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TapTouchActionEvent"@en .
+<https://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents differend kinds events related to user's tap on the touch screen"@en .
+<https://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, предназначенный для описания различных видов тапов - прикосновений пользователя к экрану одним пальцем без движения"@ru .
+<https://w3id.org/usability#TapTouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TapTouchActionEvent"@en .
 # 
-# http://w3id.org/usability#TouchActionEvent
-<http://w3id.org/usability#TouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#ActionEvent> .
-<http://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents events related to user interations with touchscreen, like smartphone or tablet PC"@en .
-<http://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события действий, связанных с взаимодействием пользователя с сенсорным экраном (тачскрин, англ. touchscreen), например, дисплеем телефона или планшетного компьютера"@ru .
-<http://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TouchActionEvent"@en .
-<http://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КасаниеДействиеСобытие"@ru .
+# https://w3id.org/usability#TouchActionEvent
+<https://w3id.org/usability#TouchActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#ActionEvent> .
+<https://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents events related to user interations with touchscreen, like smartphone or tablet PC"@en .
+<https://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события действий, связанных с взаимодействием пользователя с сенсорным экраном (тачскрин, англ. touchscreen), например, дисплеем телефона или планшетного компьютера"@ru .
+<https://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TouchActionEvent"@en .
+<https://w3id.org/usability#TouchActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "КасаниеДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#TypeKeyboardActionEvent
-<http://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://w3id.org/usability#KeyboardActionEvent> .
-<http://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents clicks on a keyboard"@en .
-<http://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события нажатия клавиш клавиатуры"@ru .
-<http://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TypeKeyboardActionEvent"@en .
-<http://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ВводКлавиатураДействиеСобытие"@ru .
+# https://w3id.org/usability#TypeKeyboardActionEvent
+<https://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/usability#KeyboardActionEvent> .
+<https://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "The class that represents clicks on a keyboard"@en .
+<https://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс, который описывает события нажатия клавиш клавиатуры"@ru .
+<https://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "TypeKeyboardActionEvent"@en .
+<https://w3id.org/usability#TypeKeyboardActionEvent> <http://www.w3.org/2000/01/rdf-schema#label> "ВводКлавиатураДействиеСобытие"@ru .
 # 
-# http://w3id.org/usability#User
-<http://w3id.org/usability#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
+# https://w3id.org/usability#User
+<https://w3id.org/usability#User> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid109 .
 _:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#performed> .
-_:genid109 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
+_:genid109 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#performed> .
+_:genid109 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid110 .
 _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasName> .
+_:genid110 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasName> .
 _:genid110 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid110 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483908 .
 _:genid2147483908 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -770,37 +770,37 @@ _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid113 .
 _:genid113 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
+<https://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid114 .
 _:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasUid> .
+_:genid114 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasUid> .
 _:genid114 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid114 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483909 .
 _:genid2147483909 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483909 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#string> .
 _:genid2147483909 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid112 .
-<http://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#comment> "The user who runs sessions"@en .
-<http://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#comment> "Пользователь, который выполнял(ет) сессии."@ru .
-<http://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#label> "User"@en .
-<http://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#label> "Пользователь"@ru .
+<https://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#comment> "The user who runs sessions"@en .
+<https://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#comment> "Пользователь, который выполнял(ет) сессии."@ru .
+<https://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#label> "User"@en .
+<https://w3id.org/usability#User> <http://www.w3.org/2000/01/rdf-schema#label> "Пользователь"@ru .
 # 
-# http://w3id.org/usability#Variation
-<http://w3id.org/usability#Variation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
+# https://w3id.org/usability#Variation
+<https://w3id.org/usability#Variation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid115 .
 _:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#contains> .
-_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Event> .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
+_:genid115 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#contains> .
+_:genid115 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Event> .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid116 .
 _:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#isContainedIn> .
-_:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://w3id.org/usability#Region> .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
+_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#isContainedIn> .
+_:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/usability#Region> .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid117 .
 _:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasImage> .
+_:genid117 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasImage> .
 _:genid117 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
-_:genid117 <http://www.w3.org/2002/07/owl#onClass> <http://w3id.org/usability#Image> .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
+_:genid117 <http://www.w3.org/2002/07/owl#onClass> <https://w3id.org/usability#Image> .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid118 .
 _:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMaxHeight> .
+_:genid118 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMaxHeight> .
 _:genid118 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid118 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483910 .
 _:genid2147483910 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -810,33 +810,33 @@ _:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid121 .
 _:genid121 <http://www.w3.org/2001/XMLSchema#minInclusive> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 _:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid122 .
 _:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMaxWidth> .
+_:genid122 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMaxWidth> .
 _:genid122 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid122 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483911 .
 _:genid2147483911 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483911 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483911 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid120 .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid123 .
 _:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMinHeight> .
+_:genid123 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMinHeight> .
 _:genid123 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid123 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483912 .
 _:genid2147483912 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483912 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483912 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid120 .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid124 .
 _:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasMinWidth> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasMinWidth> .
 _:genid124 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid124 <http://www.w3.org/2002/07/owl#onDataRange> _:genid2147483913 .
 _:genid2147483913 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
 _:genid2147483913 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#double> .
 _:genid2147483913 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid120 .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid125 .
 _:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <http://w3id.org/usability#hasName> .
+_:genid125 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/usability#hasName> .
 _:genid125 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
 _:genid125 <http://www.w3.org/2002/07/owl#onDataRange> _:genid126 .
 _:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
@@ -846,10 +846,10 @@ _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid128 .
 _:genid128 <http://www.w3.org/2001/XMLSchema#minLength> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
 _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a region variation, since a region may have one or more variations. Variation is a unique combination of region image's height and width, or their range"@en .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс предназначен для описания вариации региона, так как каждый регион, в свою очередь, может иметь одну или более вариаций. Под вариацией региона в общем случае может пониматься уникальное сочетание параметров высоты и ширины изображения региона, либо их диапазон"@ru .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#label> "Variation"@en .
-<http://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#label> "ВариацияРегиона"@ru .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#comment> "Class that describes a region variation, since a region may have one or more variations. Variation is a unique combination of region image's height and width, or their range"@en .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#comment> "Класс предназначен для описания вариации региона, так как каждый регион, в свою очередь, может иметь одну или более вариаций. Под вариацией региона в общем случае может пониматься уникальное сочетание параметров высоты и ширины изображения региона, либо их диапазон"@ru .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#label> "Variation"@en .
+<https://w3id.org/usability#Variation> <http://www.w3.org/2000/01/rdf-schema#label> "ВариацияРегиона"@ru .
 # 
 # 
 # 
@@ -860,132 +860,132 @@ _:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/
 # #################################################################
 # 
 # 
-# http://w3id.org/usability#CommandA
-<http://w3id.org/usability#CommandA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#CommandA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Command> .
-<http://w3id.org/usability#CommandA> <http://w3id.org/usability#hasName> "CommandA" .
+# https://w3id.org/usability#CommandA
+<https://w3id.org/usability#CommandA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#CommandA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Command> .
+<https://w3id.org/usability#CommandA> <https://w3id.org/usability#hasName> "CommandA" .
 # 
-# http://w3id.org/usability#CommandB
-<http://w3id.org/usability#CommandB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#CommandB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Command> .
-<http://w3id.org/usability#CommandB> <http://w3id.org/usability#isContainedIn> <http://w3id.org/usability#RegionVariation211> .
-<http://w3id.org/usability#CommandB> <http://w3id.org/usability#wasInvokedIn> <http://w3id.org/usability#RegionVariation211> .
-<http://w3id.org/usability#CommandB> <http://w3id.org/usability#hasName> "CommandB" .
+# https://w3id.org/usability#CommandB
+<https://w3id.org/usability#CommandB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#CommandB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Command> .
+<https://w3id.org/usability#CommandB> <https://w3id.org/usability#isContainedIn> <https://w3id.org/usability#RegionVariation211> .
+<https://w3id.org/usability#CommandB> <https://w3id.org/usability#wasInvokedIn> <https://w3id.org/usability#RegionVariation211> .
+<https://w3id.org/usability#CommandB> <https://w3id.org/usability#hasName> "CommandB" .
 # 
-# http://w3id.org/usability#CommandEvent1113
-<http://w3id.org/usability#CommandEvent1113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#CommandEvent1113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#CommandEvent> .
-<http://w3id.org/usability#CommandEvent1113> <http://w3id.org/usability#contains> <http://w3id.org/usability#CommandA> .
-<http://w3id.org/usability#CommandEvent1113> <http://w3id.org/usability#isContainedIn> <http://w3id.org/usability#RegionVariation111> .
-<http://w3id.org/usability#CommandEvent1113> <http://w3id.org/usability#wasAssociatedWith> <http://w3id.org/usability#CommandA> .
+# https://w3id.org/usability#CommandEvent1113
+<https://w3id.org/usability#CommandEvent1113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#CommandEvent1113> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#CommandEvent> .
+<https://w3id.org/usability#CommandEvent1113> <https://w3id.org/usability#contains> <https://w3id.org/usability#CommandA> .
+<https://w3id.org/usability#CommandEvent1113> <https://w3id.org/usability#isContainedIn> <https://w3id.org/usability#RegionVariation111> .
+<https://w3id.org/usability#CommandEvent1113> <https://w3id.org/usability#wasAssociatedWith> <https://w3id.org/usability#CommandA> .
 # 
-# http://w3id.org/usability#CommandEvent1114
-<http://w3id.org/usability#CommandEvent1114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#CommandEvent1114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#CommandEvent> .
-<http://w3id.org/usability#CommandEvent1114> <http://w3id.org/usability#contains> <http://w3id.org/usability#CommandA> .
-<http://w3id.org/usability#CommandEvent1114> <http://w3id.org/usability#isContainedIn> <http://w3id.org/usability#RegionVariation111> .
-<http://w3id.org/usability#CommandEvent1114> <http://w3id.org/usability#wasAssociatedWith> <http://w3id.org/usability#CommandA> .
+# https://w3id.org/usability#CommandEvent1114
+<https://w3id.org/usability#CommandEvent1114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#CommandEvent1114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#CommandEvent> .
+<https://w3id.org/usability#CommandEvent1114> <https://w3id.org/usability#contains> <https://w3id.org/usability#CommandA> .
+<https://w3id.org/usability#CommandEvent1114> <https://w3id.org/usability#isContainedIn> <https://w3id.org/usability#RegionVariation111> .
+<https://w3id.org/usability#CommandEvent1114> <https://w3id.org/usability#wasAssociatedWith> <https://w3id.org/usability#CommandA> .
 # 
-# http://w3id.org/usability#CommandEvent2112
-<http://w3id.org/usability#CommandEvent2112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#CommandEvent2112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#CommandEvent> .
-<http://w3id.org/usability#CommandEvent2112> <http://w3id.org/usability#contains> <http://w3id.org/usability#CommandB> .
-<http://w3id.org/usability#CommandEvent2112> <http://w3id.org/usability#wasAssociatedWith> <http://w3id.org/usability#CommandB> .
+# https://w3id.org/usability#CommandEvent2112
+<https://w3id.org/usability#CommandEvent2112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#CommandEvent2112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#CommandEvent> .
+<https://w3id.org/usability#CommandEvent2112> <https://w3id.org/usability#contains> <https://w3id.org/usability#CommandB> .
+<https://w3id.org/usability#CommandEvent2112> <https://w3id.org/usability#wasAssociatedWith> <https://w3id.org/usability#CommandB> .
 # 
-# http://w3id.org/usability#Device1
-<http://w3id.org/usability#Device1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Device1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Device> .
-<http://w3id.org/usability#Device1> <http://w3id.org/usability#wasUsedIn> <http://w3id.org/usability#Session1> .
-<http://w3id.org/usability#Device1> <http://w3id.org/usability#wasUsedIn> <http://w3id.org/usability#Session2> .
+# https://w3id.org/usability#Device1
+<https://w3id.org/usability#Device1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Device1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Device> .
+<https://w3id.org/usability#Device1> <https://w3id.org/usability#wasUsedIn> <https://w3id.org/usability#Session1> .
+<https://w3id.org/usability#Device1> <https://w3id.org/usability#wasUsedIn> <https://w3id.org/usability#Session2> .
 # 
-# http://w3id.org/usability#Event1111
-<http://w3id.org/usability#Event1111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Event1111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Event> .
-<http://w3id.org/usability#Event1111> <http://w3id.org/usability#hasInRegionX> "27.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://w3id.org/usability#Event1111> <http://w3id.org/usability#hasInRegionY> "625.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+# https://w3id.org/usability#Event1111
+<https://w3id.org/usability#Event1111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Event1111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Event> .
+<https://w3id.org/usability#Event1111> <https://w3id.org/usability#hasInRegionX> "27.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/usability#Event1111> <https://w3id.org/usability#hasInRegionY> "625.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 # 
-# http://w3id.org/usability#Event1112
-<http://w3id.org/usability#Event1112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Event1112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Event> .
+# https://w3id.org/usability#Event1112
+<https://w3id.org/usability#Event1112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Event1112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Event> .
 # 
-# http://w3id.org/usability#Event1121
-<http://w3id.org/usability#Event1121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Event1121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Event> .
+# https://w3id.org/usability#Event1121
+<https://w3id.org/usability#Event1121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Event1121> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Event> .
 # 
-# http://w3id.org/usability#Event1122
-<http://w3id.org/usability#Event1122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Event1122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Event> .
+# https://w3id.org/usability#Event1122
+<https://w3id.org/usability#Event1122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Event1122> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Event> .
 # 
-# http://w3id.org/usability#Event2111
-<http://w3id.org/usability#Event2111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Event2111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Event> .
+# https://w3id.org/usability#Event2111
+<https://w3id.org/usability#Event2111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Event2111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Event> .
 # 
-# http://w3id.org/usability#Image111
-<http://w3id.org/usability#Image111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Image111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Image> .
+# https://w3id.org/usability#Image111
+<https://w3id.org/usability#Image111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Image111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Image> .
 # 
-# http://w3id.org/usability#Image112
-<http://w3id.org/usability#Image112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Image112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Image> .
+# https://w3id.org/usability#Image112
+<https://w3id.org/usability#Image112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Image112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Image> .
 # 
-# http://w3id.org/usability#Image211
-<http://w3id.org/usability#Image211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Image211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Image> .
+# https://w3id.org/usability#Image211
+<https://w3id.org/usability#Image211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Image211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Image> .
 # 
-# http://w3id.org/usability#Region11
-<http://w3id.org/usability#Region11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Region11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Region> .
-<http://w3id.org/usability#Region11> <http://w3id.org/usability#contains> <http://w3id.org/usability#RegionVariation111> .
-<http://w3id.org/usability#Region11> <http://w3id.org/usability#contains> <http://w3id.org/usability#RegionVariation112> .
-<http://w3id.org/usability#Region11> <http://w3id.org/usability#hasName> "Region11" .
+# https://w3id.org/usability#Region11
+<https://w3id.org/usability#Region11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Region11> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Region> .
+<https://w3id.org/usability#Region11> <https://w3id.org/usability#contains> <https://w3id.org/usability#RegionVariation111> .
+<https://w3id.org/usability#Region11> <https://w3id.org/usability#contains> <https://w3id.org/usability#RegionVariation112> .
+<https://w3id.org/usability#Region11> <https://w3id.org/usability#hasName> "Region11" .
 # 
-# http://w3id.org/usability#Region21
-<http://w3id.org/usability#Region21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Region21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Region> .
-<http://w3id.org/usability#Region21> <http://w3id.org/usability#contains> <http://w3id.org/usability#RegionVariation211> .
-<http://w3id.org/usability#Region21> <http://w3id.org/usability#hasName> "Region21" .
+# https://w3id.org/usability#Region21
+<https://w3id.org/usability#Region21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Region21> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Region> .
+<https://w3id.org/usability#Region21> <https://w3id.org/usability#contains> <https://w3id.org/usability#RegionVariation211> .
+<https://w3id.org/usability#Region21> <https://w3id.org/usability#hasName> "Region21" .
 # 
-# http://w3id.org/usability#RegionVariation111
-<http://w3id.org/usability#RegionVariation111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#RegionVariation111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#RegionVariation111> <http://w3id.org/usability#contains> <http://w3id.org/usability#CommandEvent1113> .
-<http://w3id.org/usability#RegionVariation111> <http://w3id.org/usability#contains> <http://w3id.org/usability#CommandEvent1114> .
-<http://w3id.org/usability#RegionVariation111> <http://w3id.org/usability#contains> <http://w3id.org/usability#Event1111> .
-<http://w3id.org/usability#RegionVariation111> <http://w3id.org/usability#contains> <http://w3id.org/usability#Event1112> .
-<http://w3id.org/usability#RegionVariation111> <http://w3id.org/usability#hasImage> <http://w3id.org/usability#Image111> .
-<http://w3id.org/usability#RegionVariation111> <http://w3id.org/usability#hasName> "RegionVariation111" .
+# https://w3id.org/usability#RegionVariation111
+<https://w3id.org/usability#RegionVariation111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#RegionVariation111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#RegionVariation111> <https://w3id.org/usability#contains> <https://w3id.org/usability#CommandEvent1113> .
+<https://w3id.org/usability#RegionVariation111> <https://w3id.org/usability#contains> <https://w3id.org/usability#CommandEvent1114> .
+<https://w3id.org/usability#RegionVariation111> <https://w3id.org/usability#contains> <https://w3id.org/usability#Event1111> .
+<https://w3id.org/usability#RegionVariation111> <https://w3id.org/usability#contains> <https://w3id.org/usability#Event1112> .
+<https://w3id.org/usability#RegionVariation111> <https://w3id.org/usability#hasImage> <https://w3id.org/usability#Image111> .
+<https://w3id.org/usability#RegionVariation111> <https://w3id.org/usability#hasName> "RegionVariation111" .
 # 
-# http://w3id.org/usability#RegionVariation112
-<http://w3id.org/usability#RegionVariation112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#RegionVariation112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#RegionVariation112> <http://w3id.org/usability#hasImage> <http://w3id.org/usability#Image112> .
+# https://w3id.org/usability#RegionVariation112
+<https://w3id.org/usability#RegionVariation112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#RegionVariation112> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#RegionVariation112> <https://w3id.org/usability#hasImage> <https://w3id.org/usability#Image112> .
 # 
-# http://w3id.org/usability#RegionVariation211
-<http://w3id.org/usability#RegionVariation211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#RegionVariation211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Variation> .
-<http://w3id.org/usability#RegionVariation211> <http://w3id.org/usability#contains> <http://w3id.org/usability#CommandEvent2112> .
-<http://w3id.org/usability#RegionVariation211> <http://w3id.org/usability#hasImage> <http://w3id.org/usability#Image211> .
+# https://w3id.org/usability#RegionVariation211
+<https://w3id.org/usability#RegionVariation211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#RegionVariation211> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Variation> .
+<https://w3id.org/usability#RegionVariation211> <https://w3id.org/usability#contains> <https://w3id.org/usability#CommandEvent2112> .
+<https://w3id.org/usability#RegionVariation211> <https://w3id.org/usability#hasImage> <https://w3id.org/usability#Image211> .
 # 
-# http://w3id.org/usability#Session1
-<http://w3id.org/usability#Session1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Session1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#Session1> <http://w3id.org/usability#contains> <http://w3id.org/usability#Region11> .
+# https://w3id.org/usability#Session1
+<https://w3id.org/usability#Session1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Session1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#Session1> <https://w3id.org/usability#contains> <https://w3id.org/usability#Region11> .
 # 
-# http://w3id.org/usability#Session2
-<http://w3id.org/usability#Session2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#Session2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#Session> .
-<http://w3id.org/usability#Session2> <http://w3id.org/usability#contains> <http://w3id.org/usability#Region21> .
+# https://w3id.org/usability#Session2
+<https://w3id.org/usability#Session2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#Session2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#Session> .
+<https://w3id.org/usability#Session2> <https://w3id.org/usability#contains> <https://w3id.org/usability#Region21> .
 # 
-# http://w3id.org/usability#User1
-<http://w3id.org/usability#User1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#User1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#User> .
-<http://w3id.org/usability#User1> <http://w3id.org/usability#performed> <http://w3id.org/usability#Session1> .
-<http://w3id.org/usability#User1> <http://w3id.org/usability#hasName> "Ivan Ivanov" .
+# https://w3id.org/usability#User1
+<https://w3id.org/usability#User1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#User1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#User> .
+<https://w3id.org/usability#User1> <https://w3id.org/usability#performed> <https://w3id.org/usability#Session1> .
+<https://w3id.org/usability#User1> <https://w3id.org/usability#hasName> "Ivan Ivanov" .
 # 
-# http://w3id.org/usability#User2
-<http://w3id.org/usability#User2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<http://w3id.org/usability#User2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://w3id.org/usability#User> .
-<http://w3id.org/usability#User2> <http://w3id.org/usability#performed> <http://w3id.org/usability#Session2> .
-<http://w3id.org/usability#User2> <http://w3id.org/usability#hasName> "Petr Petrov" .
+# https://w3id.org/usability#User2
+<https://w3id.org/usability#User2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://w3id.org/usability#User2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://w3id.org/usability#User> .
+<https://w3id.org/usability#User2> <https://w3id.org/usability#performed> <https://w3id.org/usability#Session2> .
+<https://w3id.org/usability#User2> <https://w3id.org/usability#hasName> "Petr Petrov" .
 # 
 # Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
